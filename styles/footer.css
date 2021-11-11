@@ -1,0 +1,24 @@
+footer{
+	padding-bottom: 1.5em;
+	padding-top: 1em;
+
+}
+
+.h5{
+	font-weight: bolder;
+}
+
+a {
+	text-decoration: none;
+	color: #F4FFFD;
+	margin-top: 16px;
+	margin-bottom: 4px;
+}
+
+
+
+ul {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}

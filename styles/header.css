@@ -1,0 +1,21 @@
+
+header{
+	color: #F4FFFD;
+	background-color: #1D3557;
+	padding: 0.2em;
+}
+
+
+.link{
+	font-weight: bold;
+	color: #F4FFFD;
+	text-decoration: none;
+	margin: 0px;
+}
+
+
+#search_field{
+	padding: 0.1em;
+	width: 20%;
+	border-radius: 30px;
+}
