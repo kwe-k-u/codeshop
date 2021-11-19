@@ -51,7 +51,7 @@
         <tbody>
           <tr>
             <!-- remove action -->
-            <th scope="row">
+            <th scope="row" >
 
             <h2 class="icon-heading"><i class="bi bi-x-square"></i></h2>
             </th>

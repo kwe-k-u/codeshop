@@ -1,4 +1,4 @@
-<footer class="cs-primary cente">
+<footer class="cs-primary center">
 	<div class="container">
 		<div class="row align-items-start">
 
@@ -70,15 +70,15 @@
 				<ul>
 
 					<li>
-						<a href="" class ="footer-link">Terms and Conditions</a>
+						<a href="info.php" class ="footer-link">Terms and Conditions</a>
 					</li>
 
 					<li>
-						<a href="" class ="footer-link">Privacy</a>
+						<a href="info.php" class ="footer-link">Privacy</a>
 					</li>
 
 					<li>
-						<a href="" class ="footer-link">About</a>
+						<a href="info.php" class ="footer-link">About</a>
 					</li>
 				</ul>
 

@@ -9,7 +9,7 @@
 	<header class=" cs-primary">
 		<nav class="navbar ">
 			<div class="container-fluid">
-				<a class="navbar-brand link" href="codeshop.php">CodeShop</a>
+				<a class="navbar-brand link" href="index.php">CodeShop</a>
 				<a href="marketplace.php" class="link">Marketplace</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
 					Account
 				</div></a>
 
-				<a href="marketplace.php" class="link">
+				<a href="info.php" class="link">
 				<div class="link">
 					<i class="bi bi-question"></i>
 					Help

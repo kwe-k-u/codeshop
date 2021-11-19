@@ -24,3 +24,18 @@ body{
 	margin: 0.5em;
 }
 
+
+input{
+	padding: 0.1em;
+	width: 20%;
+	border-radius: 30px;
+}
+
+
+
+
+.a-button{
+	width: fit-content;
+	background-color: #457B9D;
+	margin-right: 0.5em;
+}
