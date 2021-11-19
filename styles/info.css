@@ -1,0 +1,50 @@
+#sidebar {
+	padding-right: 0px;
+}
+
+#sidebar  div{
+	align-items: center;
+	padding-left: 2em;
+}
+.selected{
+	margin-top: 3.5em;
+	margin-bottom: 0.5em;
+	margin-right: 0px;
+	padding: 0.2em;
+	color: #696047;
+	text-align: center;
+	background-color: #C6E0FF;
+}
+
+#sidebar a:hover {
+	color: #1D3557;
+}
+
+#filter-apply{
+	align-self: end;
+}
+
+/* #language-chips, #content-display, #type-select { */
+#language-chips {
+	display: inline;
+}
+
+#main a {
+	color: black;
+}
+
+
+#main a:hover {
+	color: black;
+}
+
+
+.cs-page-counter {
+	width: 1em;
+	margin: 0.1em;
+}
+
+#main{
+	padding-top: 2em;
+	padding-left: 1em;
+}
