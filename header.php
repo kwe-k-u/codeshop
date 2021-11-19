@@ -6,44 +6,19 @@
 </head>
 
 <body>
-	<header class=" cs-primary">
-		<nav class="navbar ">
-			<div class="container-fluid">
-				<a class="navbar-brand link" href="index.php">CodeShop</a>
-				<a href="marketplace.php" class="link">Marketplace</a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-
-
-				<!-- search field -->
-				<input type="search" name="searchField" id="search_field">
-
-
-
-				<!-- Links to the left of header -->
-				<a href="marketplace.php" class="link">
-				<div class="link">
-					<i class="bi bi-person-circle"></i>
-
-					Account
-				</div></a>
-
-				<a href="info.php" class="link">
-				<div class="link">
-					<i class="bi bi-question"></i>
-					Help
-				</div></a>
-
-				<a href="shopping_cart.php" class="link">
-				<div class="link">
-					<i class="bi bi-cart"></i>
-					Cart
-				</div></a>
-
+	<nav id="nav">
+		<div id="brand">
+			logo(c)
+			codeshop
+		</div>
+		<div id="hamburger">
+		hamburger
+		</div>
+		<div id="links">
+			<a href="">link1</a>
+			<a href="">link1</a>
+			<a href="">link1</a>
+			<a href="">link1</a>
 
 			</div>
-		</nav>
-	</header>
+	</nav>

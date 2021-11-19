@@ -1,8 +1,31 @@
 
-header{
+#nav{
 	color: #F4FFFD;
-	background-color: #1D3557;
+	background-color: #1D3557 !important;
 	padding: 0.2em;
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+#brand, #hamburger{
+	width: 50%;
+}
+
+#hamburger{
+	text-align: right;
+}
+
+#hamburger:hover + #links{
+	display: flex;
+}
+
+#links{
+	display: none;
+	flex-flow: column;
 }
 
 

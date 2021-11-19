@@ -1,6 +1,6 @@
 
 body{
-	background-color: #F4FFFD;
+	/* background-color: #F4FFFD; */
 }
 
 .cs-primary{
@@ -17,7 +17,7 @@ body{
 
 .cs-tertiary{
 	color: #000;
-	background-color: #C6E0FF;
+	/* background-color: #C6E0FF; */
 }
 
 .icon-heading{
