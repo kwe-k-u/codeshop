@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  flex-flow: column-reverse;
+  padding: 3rem;
+  background-color: #457b9d;
+  color: white;
+}
+
+#login-sign-up {
+  margin-bottom: 2rem;
+}
+
+#login-sign-up .nav-link:not(.active) {
+  color: white;
+}
+
+@media screen and (min-width: 760px) {
+  main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  main > * {
+    width: 30%;
+    padding: 1rem;
+  }
+}
