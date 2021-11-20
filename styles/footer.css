@@ -1,24 +1,14 @@
-footer{
-	padding-bottom: 1.5em;
-	padding-top: 1em;
-
+#footer {
+  background-color: #1d3557;
+  color: white;
+  padding: 3rem 0;
 }
 
-.h5{
-	font-weight: bolder;
+#footer ul {
+  list-style-type: none;
+  padding-left: 0;
 }
-
-a {
-	text-decoration: none;
-	color: #F4FFFD;
-	margin-top: 16px;
-	margin-bottom: 4px;
-}
-
-
-
-ul {
-	list-style: none;
-	margin-left: 0px;
-	padding-left: 0px;
+#footer a {
+  color: #eee;
+  text-decoration: none;
 }
