@@ -95,15 +95,16 @@
           Language:
 
           <div class="btn-group " role="group" id="language-chips">
-            <span class="badge bg-secondary">Python</span>
-            <span class="badge bg-secondary">Java Script</span>
-            <span class="badge bg-secondary">Dart</span>
-            <span class="badge bg-secondary">Typescript</span>
+            <a href=""><span class="badge bg-secondary">Python</span></a>
+            <a href=""><span class="badge bg-secondary">Java Script</span></a>
+            <a href=""><span class="badge bg-secondary">Dart</span></a>
+            <a href=""><span class="badge bg-secondary">Typescript</span></a>
+
           </div>
         </div>
       </section>
 
-      <?php require_once "marketplace_cardview.php" ?>
+      <?php require_once "marketplace_list.php" ?>
     </section>
 
 

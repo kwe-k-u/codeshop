@@ -27,7 +27,7 @@
 
 
 			<div id="links">
-				<input type="text" placeholder="search">
+				<input type="search" placeholder="search">
 				<div>
 					<a href="marketplace.php"><i class="bi bi-shop-window"></i>MarketPlace</a>
 					<a href="info.php"><i class="bi bi-question"></i>Help</a>
