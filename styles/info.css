@@ -16,13 +16,12 @@
 	background-color: #C6E0FF;
 }
 
+
+
 #sidebar a:hover {
 	color: #1D3557;
 }
 
-#filter-apply{
-	align-self: end;
-}
 
 /* #language-chips, #content-display, #type-select { */
 #language-chips {

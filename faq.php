@@ -23,7 +23,7 @@
 
 
 		<div class="col-md p-5">
-			<p>lsdkldslkdslkdslkdslkdslk</p>
+		<img class="img-fluid w-50 d-none d-sm-block" src="image/faq.svg" alt="">
 		</div>
 	</div>
 
@@ -105,7 +105,7 @@
 
 
 		<div class="col-md p-5">
-			<p>lsdkldslkdslkdslkdslkdslk</p>
+		<img class="img-fluid w-50 d-none d-sm-block" src="image/dev_faq.svg" alt="">
 		</div>
 	</div>
 
@@ -113,7 +113,7 @@
 
 
 
-	<section class="p-5" id="questions">
+	<section class="p-5" id="dev_questions">
 		<div class="container">
 			<h2 class="text-center bm-4">Frequently Asked Questions</h2>
 			<div class="accordion accordion-flush" id="questions">

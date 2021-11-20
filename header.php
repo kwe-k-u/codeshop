@@ -1,49 +1,37 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/header.css">
 <link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="styles/footer.css">
 <!-- boot strap icons  -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+<title>CodeShop </title>
 </head>
 
 <body>
-	<header class=" cs-primary">
-		<nav class="navbar ">
-			<div class="container-fluid">
-				<a class="navbar-brand link" href="index.php">CodeShop</a>
-				<a href="marketplace.php" class="link">Marketplace</a>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-
-
-				<!-- search field -->
-				<input type="search" name="searchField" id="search_field">
-
-
-
-				<!-- Links to the left of header -->
-				<a href="marketplace.php" class="link">
-				<div class="link">
-					<i class="bi bi-person-circle"></i>
-
-					Account
-				</div></a>
-
-				<a href="info.php" class="link">
-				<div class="link">
-					<i class="bi bi-question"></i>
-					Help
-				</div></a>
-
-				<a href="shopping_cart.php" class="link">
-				<div class="link">
-					<i class="bi bi-cart"></i>
-					Cart
-				</div></a>
-
-
+	<nav id="nav">
+		<div id="brand">
+			<div id="logo"> <strong>C</strong>
 			</div>
-		</nav>
-	</header>
+			<h5><strong>CodeShop</strong></h5>
+		</div>
+
+
+
+			<div id="hamburger">
+				<i class="bi bi-list"></i>
+			</div>
+
+
+			<div id="links">
+				<input type="search" placeholder="search">
+				<div>
+					<a href="marketplace.php"><i class="bi bi-shop-window"></i>MarketPlace</a>
+					<a href="info.php"><i class="bi bi-question"></i>Help</a>
+					<a href="shopping_cart.php"><i class="bi bi-cart"></i>Cart</a>
+				</div>
+			</div>
+	</nav>

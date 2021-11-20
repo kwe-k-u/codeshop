@@ -45,6 +45,23 @@
 }
 
 #main{
+	width: 80%;
 	padding-top: 2em;
 	padding-left: 1em;
+}
+
+
+#sidebar {
+	width: 20%;
+	display: inline;
+	background-color: #457B9D;
+}
+
+#sidebar a {
+	text-decoration: none;
+	color: white;
+}
+
+#filter_form{
+	color: white;
 }

@@ -1,41 +1,66 @@
+main {
+  display: flex;
+  flex-flow: column-reverse;
+  padding: 3rem;
+  background-color: #457b9d;
+  color: white;
+}
+
+#login-sign-up {
+  margin-bottom: 2rem;
+}
+
+#login-sign-up .nav-link:not(.active) {
+  color: white;
+}
+
+@media screen and (min-width: 760px) {
+  main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  main > * {
+    width: 30%;
+    padding: 1rem;
+  }
+}
+
+
+#buyer_account_form div div input, #developer_account_form div div input{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 80%;
+  padding-left: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
+}
+
+#buyer_account_form, #developer_account_form{
+  padding: 2em;
+  background-color: #F4FFFD;
+  color: black;
+}
+
+input {
+  border-radius: 0.5em;
+}
+
+#logo{
+  background-color: white;
+  padding: 1em;
+  justify-content: center;
+  color: black;
+  display: inline;
+  margin-right: 1em;
+}
+
+#brand h5{
+  display: inline;
+}
 
 body{
-	background-color: #F4FFFD;
-}
-
-.cs-primary{
-	padding-left: 200px;
-	color: #F4FFFD;
-	background-color: #1D3557;
-}
-
-
-.cs-secondary{
-	color: #F4FFFD;
-	background-color: #457B9D;
-}
-
-.cs-tertiary{
-	color: #000;
-	background-color: #C6E0FF;
-}
-
-.icon-heading{
-	margin: 0.5em;
-}
-
-
-input{
-	padding: 0.1em;
-	width: 20%;
-	border-radius: 30px;
-}
-
-
-
-
-.a-button{
-	width: fit-content;
-	background-color: #457B9D;
-	margin-right: 0.5em;
+  background-color: #F4FFFD;
 }

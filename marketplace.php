@@ -20,7 +20,7 @@
     <section class="container col-3 cs-secondary align-content-center" id="sidebar">
 
       <h3>Categories</h3>
-      <div><a href="#">All Categories</a></div>
+      <div><a href="#"><h5>All Categories</h5></a></div>
       <div><a href="#">Desktop applications</a></div>
       <div><a href="#">Mobile applications</a></div>
       <div><a href="#">Server systems applications</a></div>
@@ -29,11 +29,11 @@
 
 
       <h3>Filters</h3>
-      <form action="" method="post">
-        <div><a href="#">Upload date</a></div>
-        <div><a href="#">Location</a></div>
-        <div><a href="#">Price Range</a></div>
-        <div><a href="#">Rating</a></div>
+      <form action="marketplace.php" method="get" id="filter_form">
+        <div>Upload date
+      <input type="date" name="uploadDate" ></div>
+        <div>Price Range<input type="range" name="priceRange" ></div>
+        <div>Rating<input type="number" name="rating" id=""></div>
         <button type="submit" id="filter-apply">Apply</button>
       </form>
 
@@ -95,15 +95,16 @@
           Language:
 
           <div class="btn-group " role="group" id="language-chips">
-            <span class="badge bg-secondary">Python</span>
-            <span class="badge bg-secondary">Java Script</span>
-            <span class="badge bg-secondary">Dart</span>
-            <span class="badge bg-secondary">Typescript</span>
+            <a href=""><span class="badge bg-secondary">Python</span></a>
+            <a href=""><span class="badge bg-secondary">Java Script</span></a>
+            <a href=""><span class="badge bg-secondary">Dart</span></a>
+            <a href=""><span class="badge bg-secondary">Typescript</span></a>
+
           </div>
         </div>
       </section>
 
-      <?php require_once "marketplace_cardview.php" ?>
+      <?php require_once "marketplace_list.php" ?>
     </section>
 
 
