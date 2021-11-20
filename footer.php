@@ -8,11 +8,11 @@
             <h4 class="mb-3">Buyers</h4>
             <ul>
               <li>
-                <a href="" class="footer-link">Buy code</a>
+                <a href="marketplace.php" class="footer-link">Buy code</a>
               </li>
 
               <li>
-                <a href="" class="footer-link">Frequently Asked Questions</a>
+                <a href="info.php" class="footer-link">Frequently Asked Questions</a>
               </li>
 
               <li>
@@ -21,15 +21,16 @@
             </ul>
           </div>
 
+          <!-- developers section  -->
           <div class="col">
             <h4 class="mb-3">Developers</h4>
             <ul>
               <li>
-                <a href="" class="footer-link">Upload Code</a>
+                <a href="upload_code_form.php" class="footer-link">Upload Code</a>
               </li>
 
               <li>
-                <a href="" class="footer-link">Frequently Asked Questions</a>
+                <a href="info.php" class="footer-link">Frequently Asked Questions</a>
               </li>
 
               <li>
@@ -48,11 +49,11 @@
             <h4 class="mb-3">Company</h4>
             <ul>
               <li>
-                <a href="" class="footer-link">Contact us</a>
+                <a href="info.php" class="footer-link">Contact us</a>
               </li>
 
               <li>
-                <a href="" class="footer-link">Jobs and Careers</a>
+                <a href="info.php" class="footer-link">Jobs and Careers</a>
               </li>
             </ul>
           </div>
