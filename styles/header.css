@@ -1,38 +1,96 @@
-
-#nav{
-	color: #F4FFFD;
-	background-color: #1D3557 !important;
-	padding: 0.2em;
-
-	display: flex;
-	flex-wrap: wrap;
-	width: 100vw;
-	justify-content: space-between;
-	padding: 1rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Google sans";
 }
 
-#brand, #hamburger{
-	width: 50%;
+#nav {
+  color: #f4fffd;
+  background-color: #1d3557;
+  align-items: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
 }
 
-#hamburger{
-	text-align: right;
+#brand,
+#hamburger {
+  width: 50%;
+  cursor: pointer;
 }
 
-#hamburger:hover + #links{
-	display: flex;
+#hamburger {
+  text-align: right;
+  user-select: none;
 }
 
-#links{
-	display: none;
-	flex-flow: column;
+#links {
+  display: flex;
+  flex-flow: column;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
-
-.link{
-	font-weight: bold;
-	color: #F4FFFD;
-	text-decoration: none;
-	margin: 0px;
+#links input {
+  width: 100vw;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  outline: none;
 }
 
+#links > div {
+  display: flex;
+  flex-flow: column;
+}
+
+.link {
+  font-weight: bold;
+  color: #f4fffd;
+  text-decoration: none;
+  margin: 0px;
+}
+
+@media screen and (min-width: 760px) {
+  #links {
+    height: initial;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  #links input {
+    width: initial;
+    margin-top: 0;
+    padding: 0.5rem 1rem;
+    width: 50%;
+  }
+
+  #links > div {
+    display: flex;
+    flex-flow: row;
+  }
+
+  #links a {
+    margin: 0 1.2rem;
+  }
+
+  #brand,
+  #hamburger {
+    width: initial;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+}
