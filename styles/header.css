@@ -45,6 +45,9 @@ body {
   overflow: hidden;
   width: 100%;
 }
+#links i{
+  margin-right: 0.2em;
+}
 
 #links input {
   width: 100vw;

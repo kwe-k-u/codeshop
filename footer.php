@@ -1,6 +1,9 @@
  <footer class="cs-primary center" id="footer">
       <div class="container">
         <div class="row align-items-start">
+
+
+        <!-- buyers section  -->
           <div class="col">
             <h4 class="mb-3">Buyers</h4>
             <ul>
@@ -39,6 +42,8 @@
             </ul>
           </div>
 
+
+          <!-- company section  -->
           <div class="col">
             <h4 class="mb-3">Company</h4>
             <ul>
@@ -52,6 +57,9 @@
             </ul>
           </div>
 
+
+
+          <!-- Other section  -->
           <div class="col">
             <br />
             <br />

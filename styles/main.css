@@ -26,3 +26,37 @@ main {
     padding: 1rem;
   }
 }
+
+
+#buyer_account_form div div input, #developer_account_form div div input{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 80%;
+  padding-left: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
+}
+
+#buyer_account_form, #developer_account_form{
+  padding: 2em;
+  background-color: #F4FFFD;
+  color: black;
+}
+
+input {
+  border-radius: 0.5em;
+}
+
+#logo{
+  background-color: white;
+  padding: 1em;
+  justify-content: center;
+  color: black;
+  display: inline;
+  margin-right: 1em;
+}
+
+#brand h5{
+  display: inline;
+}
