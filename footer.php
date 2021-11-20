@@ -1,4 +1,5 @@
- <footer class="cs-primary center" id="footer">
+
+<footer class="cs-primary center" id="footer">
       <div class="container">
         <div class="row align-items-start">
 
@@ -34,11 +35,11 @@
               </li>
 
               <li>
-                <a href="" class="footer-link">Report a problem</a>
+                <a href="report_issue.php" class="footer-link">Report a problem</a>
               </li>
 
               <li>
-                <a href="" class="footer-link">Make a claim</a>
+                <a href="report_issue.php" class="footer-link">Make a claim</a>
               </li>
             </ul>
           </div>

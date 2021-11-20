@@ -116,15 +116,15 @@
 	<section class="p-5" id="dev_questions">
 		<div class="container">
 			<h2 class="text-center bm-4">Frequently Asked Questions</h2>
-			<div class="accordion accordion-flush" id="questions">
+			<div class="accordion accordion-flush" id="dquestions">
 				<!--Item 1-->
 				<div class="accordion-item">
 				  <h2 class="accordion-header">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_one" >
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dquestion_one" >
 					  Where are you located?
 					</button>
 				  </h2>
-				  <div id="question_one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+				  <div id="dquestion_one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#dquestions">
 					<div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, voluptatibus. Aliquam error porro illo fuga odit soluta nulla veritatis ipsam amet accusamus, animi similique impedit, reprehenderit odio modi excepturi laborum, sit dolorum? Odit perferendis dolorem sed! Quidem voluptate accusantium iste necessitatibus temporibus quibusdam ea a corporis? Dolore voluptates iure neque!
 					</div>
 				  </div>
@@ -132,11 +132,11 @@
 				<!--Item 2-->
 				<div class="accordion-item">
 				  <h2 class="accordion-header">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_two" >
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dquestion_two" >
 					  How much does it cost to attend?
 					</button>
 				  </h2>
-				  <div id="question_two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+				  <div id="dquestion_two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#dquestions">
 					<div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, voluptatibus. Aliquam error porro illo fuga odit soluta nulla veritatis ipsam amet accusamus, animi similique impedit, reprehenderit odio modi excepturi laborum, sit dolorum? Odit perferendis dolorem sed! Quidem voluptate accusantium iste necessitatibus temporibus quibusdam ea a corporis? Dolore voluptates iure neque!
 					</div>
 				  </div>
@@ -144,11 +144,11 @@
 				<!--Item 3-->
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_three" >
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dquestion_three" >
 						What do I need to know?
 					  </button>
 					</h2>
-					<div id="question_three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+					<div id="dquestion_three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#dquestions">
 					  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, voluptatibus. Aliquam error porro illo fuga odit soluta nulla veritatis ipsam amet accusamus, animi similique impedit, reprehenderit odio modi excepturi laborum, sit dolorum? Odit perferendis dolorem sed! Quidem voluptate accusantium iste necessitatibus temporibus quibusdam ea a corporis? Dolore voluptates iure neque!
 					  </div>
 					</div>
@@ -156,11 +156,11 @@
 				  <!--Item 4-->
 				  <div class="accordion-item">
 					  <h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_four" >
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dquestion_four" >
 						  Do you provide job search support?
 						</button>
 					  </h2>
-					  <div id="question_four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+					  <div id="dquestion_four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#dquestions">
 						<div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, voluptatibus. Aliquam error porro illo fuga odit soluta nulla veritatis ipsam amet accusamus, animi similique impedit, reprehenderit odio modi excepturi laborum, sit dolorum? Odit perferendis dolorem sed! Quidem voluptate accusantium iste necessitatibus temporibus quibusdam ea a corporis? Dolore voluptates iure neque!
 						</div>
 					  </div>

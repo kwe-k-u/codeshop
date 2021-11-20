@@ -1,3 +1,8 @@
 body > div{
 	padding: 2em;
 }
+
+#main_div{
+	background-color: #457b9d;
+	color: white;
+}

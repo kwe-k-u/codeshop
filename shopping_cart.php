@@ -100,12 +100,10 @@
           </tr>
         </tbody>
       </table>
-
-      <div class="row justify-content-end">
-        <a href="marketplace.php" class="btn btn-info a-button" role="button">Continue shopping</a>
-        <a href="" class="btn btn-info a-button" role="button">Proceed to Check out</a>
-
-      </div>
+      <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+              <a href="marketplace.php"><button class="btn btn-primary me-md-2" type="button">Continue shopping</button></a>
+              <a><button class="btn btn-primary" type="button">Complete purchase</button></a>
+            </div>
 
     </div>
 

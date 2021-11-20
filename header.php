@@ -13,11 +13,13 @@
 <body>
 
 	<nav id="nav">
+		<a href="index.php">
 		<div id="brand">
 			<div id="logo"> <strong>C</strong>
 			</div>
 			<h5><strong>CodeShop</strong></h5>
 		</div>
+		</a>
 
 
 

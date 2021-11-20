@@ -1,5 +1,11 @@
 #sidebar {
 	padding-right: 0px;
+	background-color: #457B9D;
+}
+
+#sidebar a {
+	color: white;
+	text-decoration: none;
 }
 
 #sidebar  div{
@@ -16,34 +22,8 @@
 	background-color: #C6E0FF;
 }
 
-
-
 #sidebar a:hover {
-	color: #1D3557;
-}
-
-
-/* #language-chips, #content-display, #type-select { */
-#language-chips {
-	display: inline;
-}
-
-#main a {
 	color: black;
 }
 
 
-#main a:hover {
-	color: black;
-}
-
-
-.cs-page-counter {
-	width: 1em;
-	margin: 0.1em;
-}
-
-#main{
-	padding-top: 2em;
-	padding-left: 1em;
-}
