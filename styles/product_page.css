@@ -2,7 +2,8 @@
 
 #product_info_section > div{
 	background-color: #C6E0FF;
-	padding: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 #rating{
@@ -16,7 +17,7 @@
 }
 
 .sub_img{
-	width: 60px;
+	/* width: 60px; */
 	height: 40px;
 	margin-top: 8px;
 }

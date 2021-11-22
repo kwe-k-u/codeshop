@@ -14,26 +14,54 @@
 
 	<nav id="nav">
 		<a href="index.php">
-		<div id="brand">
-			<div id="logo"> <strong>C</strong>
+			<div id="brand">
+				<div id="logo"> <strong>C</strong>
+				</div>
+				<h5><strong>CodeShop</strong></h5>
 			</div>
-			<h5><strong>CodeShop</strong></h5>
-		</div>
 		</a>
 
 
 
-			<div id="hamburger">
-				<i class="bi bi-list"></i>
-			</div>
+		<div id="hamburger">
+			<i class="bi bi-list"></i>
+		</div>
 
 
-			<div id="links">
-				<input type="search" placeholder="search">
-				<div>
-					<a href="marketplace.php"><i class="bi bi-shop-window"></i>MarketPlace</a>
-					<a href="info.php"><i class="bi bi-question"></i>Help</a>
-					<a href="shopping_cart.php"><i class="bi bi-cart"></i>Cart</a>
+		<div id="links">
+			<input type="search" placeholder="search">
+			<div>
+				<a href="marketplace.php"><i class="bi bi-shop-window"></i>MarketPlace</a>
+				<a href="info.php"><i class="bi bi-question"></i>Help</a>
+
+					<a href="shopping_cart.php" id="shopping_cart"><i class="bi bi-cart"></i>Cart</a>
 				</div>
 			</div>
-	</nav>
+		</nav>
+		<div id="login_section">
+
+			<form action="" method="post">
+				<div class="row">
+					<div class="col"></div>
+					<div class="col-3">
+						<input type="email" name="login_email" placeholder="Email">
+					</div>
+					<div class="col-3">
+						<input type="password" name="login_password" placeholder="Password">
+					</div>
+					<div class="col-2">
+						<button type="submit" class="btn btn-primary ">Login</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+			<script type='text/javascript'>
+			document.getElementById('shopping_cart').onmouseover = function(){
+				document.getElementById('login_section').style.display = 'block'
+			}
+			document.getElementById('shopping_cart').onmouseout = function(){
+				document.getElementById('login_section').style.display = 'none';
+			}
+			</script>

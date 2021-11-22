@@ -47,13 +47,13 @@
     </section>
 
     <!-- main section  -->
-    <section class="container col-9" id="main">
+    <section class="container col-8" id="main">
 
 
 
       <!-- product information  -->
       <section id="product_info_section">
-        <div class="row gx-5">
+        <div class="row gx-3">
 
           <!-- left product column  -->
           <div class="col-3">
@@ -101,7 +101,7 @@
 
 
           <!-- right product column  -->
-          <div class="col-3 ">
+          <div class="col-3 " id="r_col">
 
             <!-- purchase action buttons -->
             <div class="d-grid gap-1 d-md-flex justify-content-md-end">
@@ -136,6 +136,7 @@
 
 
           </div>
+        </div>
       </section>
 
     </section>
