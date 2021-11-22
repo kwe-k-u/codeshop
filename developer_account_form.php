@@ -1,7 +1,7 @@
 <div>
 	<form action="create_account.php" method="post" id="developer_account_form">
 		<div class="col">
-		<h5 class="text-uppercase">create a buyer account</h5>
+			<h5 class="text-uppercase">create a developer account</h5>
 			<div class >
 
 				<input type="text" name="user_name" placeholder="Username">

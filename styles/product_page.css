@@ -1,0 +1,22 @@
+
+
+#product_info_section > div{
+	background-color: #C6E0FF;
+	padding: 2em;
+}
+
+#rating{
+	display: inline-block;
+}
+
+#rating i {
+	color: gold;
+	padding: 0px;
+	padding-right: 4px;
+}
+
+.sub_img{
+	width: 60px;
+	height: 40px;
+	margin-top: 8px;
+}

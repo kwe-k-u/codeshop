@@ -19,18 +19,21 @@
 				<input type="text" class="form-control" id="title">
 			</div>
 
+			<br>
 			<!-- descriptions short  -->
 			<div class="col-md-6">
 				<label for="sDescription" class="form-label">Short Description</label>
 				<input type="text" class="form-control" id="sDescription" placeholder="Your cool project in 50 characters">
 			</div>
 
+			<br>
 			<!-- descriptions long  -->
 			<div class="col-12">
 				<label for="lDescription" class="form-label">Full Description</label>
 				<textarea name="lDescription" id="lDescription" cols="30" rows="10"></textarea>
 			</div>
 
+			<br>
 			<!-- screen shots  -->
 			<div class="col-md-6">
   <label for="screenshots" class="form-label">Screenshots</label>
@@ -57,11 +60,11 @@
 			</div>
 
 
-			<!-- Compiled upload -->
+			<!-- Compiled upload
 			<div class="col-md-2">
   <label for="formFileLg" class="form-label">Compiled file</label>
   <input class="form-control form-control-sm" id="formFileLg" type="file">
-			</div>
+			</div> -->
 
 
 			<!-- listing class  -->

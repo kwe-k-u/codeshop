@@ -17,7 +17,7 @@
               </li>
 
               <li>
-                <a href="" class="footer-link">Make a claim</a>
+                <a href="report_issue.php" class="footer-link">Make a claim</a>
               </li>
             </ul>
           </div>

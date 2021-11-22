@@ -104,7 +104,7 @@
         </div>
       </section>
 
-      <?php require_once "marketplace_cardview.php" ?>
+      <?php require_once "marketplace_list.php" ?>
     </section>
 
 
