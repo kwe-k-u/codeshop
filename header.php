@@ -56,12 +56,3 @@
 			</form>
 		</div>
 
-
-			<script type='text/javascript'>
-			document.getElementById('shopping_cart').onmouseover = function(){
-				document.getElementById('login_section').style.display = 'block'
-			}
-			document.getElementById('shopping_cart').onmouseout = function(){
-				document.getElementById('login_section').style.display = 'none';
-			}
-			</script>

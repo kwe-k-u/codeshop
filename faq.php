@@ -6,7 +6,7 @@
 <section>
 
 	<!-- buyers FAQ  -->
-	<div class="row">
+	<div class="row" id="faq_div" style="display: 'none';">
 
 		<div class="col-md p-5">
 			<h1><strong>Buyers' Frequently Asked Questions </strong></h1>

@@ -20,12 +20,11 @@
     <section class="container col-3 cs-secondary align-content-center" id="sidebar">
 
       <h3>Categories</h3>
-      <div><a href="#"><h5>All Categories</h5></a></div>
-      <div><a href="#">Desktop applications</a></div>
-      <div><a href="#">Mobile applications</a></div>
-      <div><a href="#">Server systems applications</a></div>
-      <div><a href="#">Web development</a></div>
-
+      <div><a href="marketplace.php"><h5>All Categories</h5></a></div>
+      <div><a href="marketplace.php?category=desktop">Desktop applications</a></div>
+      <div><a href="marketplace.php?category=mobile">Mobile applications</a></div>
+      <div><a href="marketplace.php?category=server">Server systems applications</a></div>
+      <div><a href="marketplace.php?category=web">Web development</a></div>
 
 
       <h3>Filters</h3>

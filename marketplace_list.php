@@ -3,7 +3,7 @@
       <section>
         <?php for ($i = 0; $i <20; $i++){ ?>
 
-          <a href="">
+          <a href="product_page.php">
             <div class="row">
 
             <!-- image and user name  -->
