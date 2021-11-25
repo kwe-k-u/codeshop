@@ -3,22 +3,22 @@
 		<div class="col">
 			<h5 class="text-uppercase">create a buyer account</h5>
 			<div>
-				<input type="text" name="user_name" id="user_name" placeholder="Username" >
+				<input type="text" name="user_name" id="user_name" placeholder="Username" required>
 				<small class="error_msg"></small>
 			</div>
 
 			<div>
-				<input type="email" name="email" id="email" placeholder="someone@website.com">
+				<input type="email" name="email" id="email" placeholder="someone@website.com" required>
 				<small ></small>
 			</div>
 
 			<div>
-				<input type="password" name="password" id="password"  placeholder="Password">
+				<input type="password" name="password" id="password"  placeholder="Password" required>
 				<small></small>
 			</div>
 
 			<div>
-				<input type="password" name="cPassword" id="cPassword" placeholder="Confirm Password">
+				<input type="password" name="cPassword" id="cPassword" placeholder="Confirm Password" required>
 				<small></small>
 
 			</div>

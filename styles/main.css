@@ -67,4 +67,5 @@ body{
 
 .error_msg{
   color: red!important;
+  display: block;
 }
