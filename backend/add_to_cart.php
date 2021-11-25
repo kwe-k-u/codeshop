@@ -42,7 +42,7 @@ if(isset($_POST['del_cart'])){
     $result =  delete_from_cart_controller($code_id);
 
     if($result){
-         header('Location: cart.php ');
+         header('Location: shopping_cart.php ');
     } 
     else {
        
