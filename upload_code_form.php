@@ -1,3 +1,6 @@
+<?php
+require('Upload code.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 

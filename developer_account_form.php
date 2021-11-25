@@ -13,7 +13,7 @@
 			</div>
 			<div>
 
-				<input type="email" name="email" placeholder="someone@website.com">
+				<input type="password" name="password" id="dpassword" placeholder="Password" required>
 			</div>
 			<div>
 

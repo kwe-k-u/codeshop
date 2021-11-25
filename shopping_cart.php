@@ -32,6 +32,8 @@
 
 
       </div>
+
+      <!-- cart content  -->
       <table class="table ">
         <colgroup>
           <col class="col-md-1">
@@ -51,28 +53,31 @@
         <tbody>
           <tr>
             <!-- remove action -->
-            <th scope="row" >
+            <th scope="row">
 
-            <h2 class="icon-heading"><i class="bi bi-x-square"></i></h2>
+              <button class="btn">
+                <h2 class="icon-heading"><i class="bi bi-x-square"></i></h2>
+              </button>
+
             </th>
 
             <!-- Product information  -->
             <td>
 
-            <div class="row">
-            <div class="col-2 product-image m-2 justify-content-center">
-              <img src="https://picsum.photos/200/300" class="product-image" alt="">
-            </div>
-            <div class="col">
+              <div class="row">
+                <div class="col-2 product-image m-2 justify-content-center">
+                  <img src="https://picsum.photos/200/300" class="product-image" alt="">
+                </div>
+                <div class="col">
 
-              <strong>Inventory application built with flutter</strong>
-              <br>
-              By Collins Dauda
-              <br>
-              <h2 class="icon-heading"><i class="bi bi-bookmark-heart"></i></h2>
+                  <strong>Inventory application built with flutter</strong>
+                  <br>
+                  By Collins Dauda
+                  <br>
+                  <h2 class="icon-heading"><i class="bi bi-bookmark-heart"></i></h2>
 
-            </div>
-            </div>
+                </div>
+              </div>
 
 
             </td>
@@ -101,11 +106,55 @@
         </tbody>
       </table>
       <div class="d-grid gap-1 d-md-flex justify-content-md-end">
-              <a href="marketplace.php"><button class="btn btn-primary me-md-2" type="button">Continue shopping</button></a>
-              <a><button class="btn btn-primary" type="button">Complete purchase</button></a>
-            </div>
+        <a href="marketplace.php"><button class="btn btn-primary me-md-2" type="button">Continue shopping</button></a>
+
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Proceed to payment</a>
+      </div>
+
+      <?php include_once "payment_modals.php"; ?>
 
     </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function() {
+        myInput.focus()
+      })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

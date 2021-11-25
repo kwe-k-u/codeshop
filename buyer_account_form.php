@@ -1,5 +1,5 @@
 <div>
-	<form action="create_account.php" method="post" id="buyer_account_form">
+	<form action="create_account.php" onsubmit="return buyer_signup()" method="post" id="buyer_account_form">
 		<div class="col">
 			<h5 class="text-uppercase">create a buyer account</h5>
 			<div>
@@ -7,7 +7,8 @@
 			</div>
 
 			<div>
-				<input type="email" name="email" placeholder="someone@website.com">
+				<input type="email" name="email" id="email" placeholder="someone@website.com" required>
+				<small ></small>
 			</div>
 
 			<div>
