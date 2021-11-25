@@ -1,19 +1,15 @@
 <?php
+
 include ('Database_connection_finalproject.php');
 require ('upload_code_form.php');
 
 if(isset($_POST['upload_btn']))
 {		
-    $project_title = $_POST['title'];
-    $short_description = $_POST['sDescription'];
-    $full_description = $_POST['lDescription'];
-    $screenshots = $_POST['screenshots'];
-    $inputState = $_POST['inputState'];
-    $code_upload = $_POST['formFilelg'];
-    $compiled_upload = $_POST['formFilelg'];
+    $language = $_POST['language'];
+    $upload_date = $_POST['upload_date'];
+    $filelocation= $_POST['filelocation'];
 
-
-    $insert = mysqli_query($db,"INSERT INTO ``(`fullname`, `age`) VALUES ('$fullname','$age')");
+    $insert = mysqli_query($db,"INSERT INTO code (`language`, `upload_date`, 'filelocation') VALUES ('$fullname','$age')");
 
     if(!$insert)
     {
@@ -25,5 +21,5 @@ if(isset($_POST['upload_btn']))
     }
 }
 
-mysqli_close($db); // Close connection
+mysqli_close($db);
 ?>
