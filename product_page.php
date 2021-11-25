@@ -1,3 +1,7 @@
+<?php
+require ('add_to_cart.php');
+?>
+
 <!doctype html>
 <html lang="en">
 
