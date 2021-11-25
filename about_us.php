@@ -24,7 +24,7 @@
 		<div class="col-md-6 col-lg-3">
 			<div class="card bg-light">
 				<div class="card-body text-center">
-					<img src="https://randomuser.me/api/portraits/men/11.jpg" clas="rounded-circle mb-3" alt="">
+					<img src="image\digney.jpeg" clas="rounded-circle mb-3" alt="">
 					<h3 class="card-title mb-3">Digney Yemofio</h3>
 					<p class="card-text">Backend Developer.</p>
 					<a href="https://www.linkedin.com/in/digney-yemofio-8a1944171/" target="_blank"><i class="bi bi-linkedin text-dark mx-1"></i></a>
@@ -51,7 +51,7 @@
 		<div class="col-md-6 col-lg-3">
 			<div class="card bg-light">
 				<div class="card-body text-center">
-					<img src="https://randomuser.me/api/portraits/men/10.jpg" clas="rounded-circle mb-3" alt="">
+					<img src="https://randomuser.me/api/portraits/men/11.jpg" clas="rounded-circle mb-3" alt="">
 					<h3 class="card-title mb-3">Shirley Yankyera</h3>
 					<p class="card-text">Front End Developer</p>
 					<a href="https://www.linkedin.com/in/shirley-yankyera-618318195/" target="_blank"><i class="bi bi-linkedin text-dark mx-1"></i></a>

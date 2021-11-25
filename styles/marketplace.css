@@ -65,3 +65,7 @@
 #filter_form{
 	color: white;
 }
+
+#cardview{
+	display: none;
+}

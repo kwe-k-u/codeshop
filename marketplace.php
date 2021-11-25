@@ -29,10 +29,16 @@
       <h3>Filters</h3>
       <form action="marketplace.php" method="get" id="filter_form">
         <div>Upload date
-          <input type="date" name="uploadDate" ></div>
-          <div>Price Range<input type="range" name="priceRange" ></div>
-          <div>Rating<input type="number" name="rating" id=""></div>
-          <button type="submit" id="filter-apply">Apply</button>
+          <input type="date" name="filter_date" >
+        </div>
+          <div>Price Range
+            <input type="range" min=200 max=2500 name="filter_price_range" oninput="sliderChange(this.value)">
+            <p id="slider_value">200</p>
+          </div>
+
+
+          <div>Rating<input type="number" name="filter_rating" id=""></div>
+          <button onsubmit="filter()" id="filter-apply">Apply</button>
         </form>
       </section>
 
@@ -93,10 +99,10 @@
           Language:
 
           <div class="btn-group " role="group" id="language-chips">
-            <a href=""><span class="badge bg-secondary">Python</span></a>
-            <a href=""><span class="badge bg-secondary">Java Script</span></a>
-            <a href=""><span class="badge bg-secondary">Dart</span></a>
-            <a href=""><span class="badge bg-secondary">Typescript</span></a>
+            <a href="marketplace.php?language=python"><span class="badge bg-secondary">Python</span></a>
+            <a href="marketplace.php?language=javascript"><span class="badge bg-secondary">Java Script</span></a>
+            <a href="marketplace.php?language=dart"><span class="badge bg-secondary">Dart</span></a>
+            <a href="marketplace.php?language=typescript"><span class="badge bg-secondary">Typescript</span></a>
 
           </div>
         </div>
