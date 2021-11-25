@@ -5,9 +5,13 @@ require ('upload_code_form.php');
 
 if(isset($_POST['upload_btn']))
 {		
-    $language = $_POST['language'];
-    $upload_date = $_POST['upload_date'];
-    $filelocation= $_POST['filelocation'];
+    $screenshots = $_POST['screenshots'];
+    $Sdescription = $_POST['sDescription'];
+    $Ldescription = $_POST['lDescription'];
+    $title = $_POST['Title'];
+    $type = $_POST['flexRadioDefualt'];
+    $input = $_POST['formFileLg'];
+    
     
 
     $insert = mysqli_query($db,"INSERT INTO code (`language`, `upload_date`, 'filelocation') VALUES ('$language','$upload_date','$filelocation')");
