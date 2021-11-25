@@ -2,6 +2,7 @@
 
 	<!-- about us text  -->
 
+
 	<div class="col-md p-5" id="about_us_div">
 		<h1><strong>About Us</strong></h1>
 		<p class="lead my-4">
@@ -36,7 +37,7 @@
 		<div class="col-md-6 col-lg-3">
 			<div class="card bg-light">
 				<div class="card-body text-center">
-					<img src="https://randomuser.me/api/portraits/women/21.jpg" clas="rounded-circle mb-3" alt="">
+					<img src="image/kweku.JPG" clas="rounded-circle mb-3" alt="">
 					<h3 class="card-title mb-3">Kweku Appiah Acquaye</h3>
 					<p class="card-text">Project Manager</p>
 					<a href="https://twitter.com/kwe_k_u" target="_blank"><i class="bi bi-twitter text-dark mx-1"></i></a>
