@@ -3,7 +3,7 @@
 require('user_class.php');
 
 function add_user_controller($name, $email, $password){
-    $user_instance = new User();
+    $user_instance = new user();
     return $user_instance->add_user($name, $email, $password);
 
 }
