@@ -1,52 +1,40 @@
 <?php
 
-require('../Classes/cart_class.php');
+require('cart_class.php');
 
 function add_to_cart_controller($code_id,$user_id,$quantity){
-    // create an instance of the user class
     $cart_instance = new Cart();
-    // call the method from the class
     return $cart_instance->add_to_cart($code_id, $user_id,$quantity);
 
 }
 
 
-
 function view_products_controller($us_id){
-    // create an instance of the user class
     $cart_instance = new Cart();
-    // call the method from the class
     return $cart_instance ->view_products($us_id);
 
 }
 
 function delete_from_cart_controller($id){
-    // create an instance of the code class
     $cart_instance = new Cart();
-    // call the method from the class
     return  $cart_instance->delete_from_cart($id);
 
 }
 
 function update_product_quantity_controller($id,$us_id,$quantity){
-    // create an instance of the code class
     $cart_instance = new Cart();
-    // call the method from the class
     return  $cart_instance->update_product_quantity($id,$us_id,$quantityty);
 
 }
 
 function sum_price_controller($us_id){
-    // create an instance of the Product class
     $cart_instance = new Cart();
-    // call the method from the class
     return  $cart_instance->sum_price($us_id);
 
 }
 
 function check_duplicate_controller($code_id,$user_id){
     $cart_instance = new Cart();
-    //method is called from the cart class
     return $cart_instance->check_duplicate($code_id,$user_id);
 }
 
