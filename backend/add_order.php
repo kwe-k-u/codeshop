@@ -1,10 +1,8 @@
 <?php 
 session_start();
 
-require('../Controllers/cart_controller.php');
+require('cart_controller.php');
 
-
-// check if theres a POST variable with the name 'add_pname'
 if(isset($_POST['add_order'])){
 
         $list_id = '';
