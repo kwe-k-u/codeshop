@@ -13,7 +13,7 @@ if(isset($_POST['update_prod'])){
 
 
     if($result === true){
-        header('Location: ../Admin/code_list.php');
+        header('Location: marketplace_list.php');
         
     } 
     else {
