@@ -1,6 +1,6 @@
 
       <!-- List view  -->
-      <section>
+      <section id="listview">
         <?php for ($i = 0; $i <20; $i++){ ?>
 
             <div class="row">
@@ -25,16 +25,20 @@
 
               </div>
               <div class="col">
-                <button class="text-uppercase btn btn-primary">Add to cart</button>
-                <button class="text-uppercase btn btn-success">Buy now</button>
+
+                <a href="" class="text-uppercase btn btn-primary">Add to cart</a>
+                <a class="btn btn-primary text-uppercase" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Buy now</a>
+
               </div>
 
             </div>
 
 
 
-        <?php } ?>
 
+            <?php } ?>
+
+            <?php include_once "payment_modals.php"; ?>
 
         <!-- list page indicator  -->
         <div class="row justify-items-center">

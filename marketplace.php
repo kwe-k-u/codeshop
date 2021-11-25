@@ -9,7 +9,6 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/marketplace.css">
-
   <title>CodeShop - MarketPlace</title>
   <?php require_once "header.php"; ?>
 
@@ -30,39 +29,38 @@
       <h3>Filters</h3>
       <form action="marketplace.php" method="get" id="filter_form">
         <div>Upload date
-      <input type="date" name="uploadDate" ></div>
-        <div>Price Range<input type="range" name="priceRange" ></div>
-        <div>Rating<input type="number" name="rating" id=""></div>
-        <button type="submit" id="filter-apply">Apply</button>
-      </form>
+          <input type="date" name="uploadDate" ></div>
+          <div>Price Range<input type="range" name="priceRange" ></div>
+          <div>Rating<input type="number" name="rating" id=""></div>
+          <button type="submit" id="filter-apply">Apply</button>
+        </form>
+      </section>
 
+      <!-- main section  -->
+      <section class="container col-9" id="main">
 
-    </section>
-
-    <!-- main section  -->
-    <section class="container col-9" id="main">
-
-      <!-- top row with search and display options  -->
-      <section id="top-section">
-        <div class="row align-content-center">
-          <!-- Search bar  -->
-          <div class="col">
-            <input type="search" name="search" id="search bar" placeholder="Search">
-          </div>
-
-          <!-- Sort by  -->
-          <div class="col">
-            <div class="dropdown me-1">
-              Sort By:
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                Best Match
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                <li><a class="dropdown-item" href="#">Upload Date</a></li>
-                <li><a class="dropdown-item" href="#">Most purchased</a></li>
-                <li><a class="dropdown-item" href="#">Cheapest</a></li>
-              </ul>
+        <!-- top row with search and display options  -->
+        <section id="top-section">
+          <div class="row align-content-center">
+            <!-- Search bar  -->
+            <div class="col">
+              <input type="search" name="search" id="search bar" placeholder="Search">
             </div>
+
+            <!-- Sort by  -->
+
+            <div class="col">
+              <div class="dropdown mx-1">
+                Sort By:
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                  Best Match
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                  <li><a class="dropdown-item" href="#">Upload Date</a></li>
+                  <li><a class="dropdown-item" href="#">Most purchased</a></li>
+                  <li><a class="dropdown-item" href="#">Cheapest</a></li>
+                </ul>
+              </div>
           </div>
 
           <!-- type of upload (generic, exclusive)  -->
@@ -79,8 +77,9 @@
           <!-- list arrangement  -->
           <div class="col">
             <div class="btn-group" role="group" id="content-display">
-              <div><a href="#" class="btn btn-primary mt-auto"><i class="bi bi-list-stars"></i></a></div>
-              <div><a href="#" class="btn btn-primary mt-auto"><i class="bi bi-grid-3x3-gap-fill"></i></a></div>
+
+              <button id="display_list" onclick="showList();" class="btn btn-primary mt-auto"><i class="bi bi-list-stars"></i></button>
+              <button id="display_grid" onclick="showGrid();" class="btn btn-primary mt-auto"><i class="bi bi-grid-3x3-gap-fill"></i></button>
 
             </div>
           </div>
@@ -104,15 +103,19 @@
       </section>
 
       <?php require_once "marketplace_list.php" ?>
+      <?php require_once "marketplace_cardview.php" ?>
+      <script type="text/javascript" src="./functions/marketplace.js"></script>
     </section>
 
 
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </div>
-  <?php require_once "footer.php"; ?>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</div>
+<?php require_once "footer.php"; ?>
+</body>
 
 </html>

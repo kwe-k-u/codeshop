@@ -1,5 +1,5 @@
 <!-- Card view  -->
-<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" id="cardview">
   <?php
   for ($i = 0; $i < 10; $i++) { ?>
 
