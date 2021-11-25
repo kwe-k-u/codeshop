@@ -8,9 +8,11 @@ if(isset($_POST['upload_btn']))
     $language = $_POST['language'];
     $upload_date = $_POST['upload_date'];
     $filelocation= $_POST['filelocation'];
+    
 
-    $insert = mysqli_query($db,"INSERT INTO code (`language`, `upload_date`, 'filelocation') VALUES ('$fullname','$age')");
-
+    $insert = mysqli_query($db,"INSERT INTO code (`language`, `upload_date`, 'filelocation') VALUES ('$language','$upload_date','$filelocation')");
+    $insert = mysqli_query($db,"INSERT INTO listing (`title`, `description`, 'short_description') VALUES ('$fullname','$age')");
+    
     if(!$insert)
     {
         echo mysqli_error();
