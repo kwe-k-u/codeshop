@@ -4,7 +4,6 @@
   for ($i = 0; $i < 10; $i++) { ?>
 
     <div class="col">
-      <a href="product_page.php">
 
       <div class="p-3 border bg-light item-tile">
         <img class="item-tile-img" src="https://picsum.photos/200/300.jpg" alt="product image">
@@ -19,7 +18,10 @@
         </div>
         <div class="row">
           <div class="col">
+
+      <a href="product_page.php">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
+  </a>
           </div>
           <div class="col">
             GHC <br>
@@ -33,7 +35,6 @@
           </div>
         </div>
       </div>
-      </a>
     </div>
   <?php }
   ?>

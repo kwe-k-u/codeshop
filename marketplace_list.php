@@ -3,11 +3,11 @@
       <section>
         <?php for ($i = 0; $i <20; $i++){ ?>
 
-          <a href="product_page.php">
             <div class="row">
 
             <!-- image and user name  -->
               <div class="col">
+
                 <img src="https://picsum.photos/200/300.jpg" alt="">
                 <p>By Collins Dauda</p>
               </div>
@@ -22,16 +22,15 @@
               <div class="col ">
                 <p>GHC</p>
                 <p><strong>259</strong></p>
-                <button class="text-uppercase">Add to cart</button>
 
               </div>
               <div class="col">
-                <button class="text-uppercase">Buy now</button>
+                <button class="text-uppercase btn btn-primary">Add to cart</button>
+                <button class="text-uppercase btn btn-success">Buy now</button>
               </div>
 
             </div>
 
-          </a>
 
 
         <?php } ?>
