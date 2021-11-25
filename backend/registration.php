@@ -1,12 +1,10 @@
 <?php
 
-require('../Controllers/user_controller.php');
+require('user_controller.php');
 
 session_start();
 
-// check if a POST variable 'add_user' exists
 if(isset($_POST['add_user'])){
-    // retrieve the name, description and quantity from the form submission
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -14,7 +12,6 @@ if(isset($_POST['add_user'])){
     $hash = password_hash($password,PASSWORD_DEFAULT);
     
 
-    // call the add_code_controller function: return true or false
     $result = add_user_controller($name, $email,$hash);
 
 
@@ -33,15 +30,11 @@ if(isset($_POST['add_user'])){
 
 
 if(isset($_POST['login_user'])){
-    // retrieve the name, description and quantity from the form submission
     $email = $_POST['email'];
     $pword = $_POST['password'];
 
 
-    // call the add_product_controller function: return true or false
     $result = login_user_controller($email);
-
-    //print_r(login_customer_controller());
 
 
     if(password_verify($password, $result['password']) ){
@@ -56,13 +49,12 @@ if(isset($_POST['login_user'])){
 
 
             echo '<script>alert("Logged In)</script>';
-            header('Location: ../index.php');
+            header('Location: index.php');
     } 
     else{
         echo '<script>alert("Login failed")</script>';
        
         
-        // header('Location: login.php');
        
 
     } 
@@ -72,9 +64,8 @@ if(isset($_POST['login_user'])){
 if(isset($_GET['logout'])){
     session_destroy();
     unset($_SESSION['user_id']);
-    header('location: ../index.php');    
+    header('location: index.php');    
 
 }
-
 
 ?>
