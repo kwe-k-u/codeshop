@@ -1,5 +1,5 @@
 <?php
-require('Upload code.php');
+require('../Backend/Upload code.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,4 +95,4 @@ require('Upload code.php');
 	</div>
 	</body>
 	<!-- footer -->
-	<?php require_once "footer.php" ?>
+	<?php require_once "../footer.php" ?>
