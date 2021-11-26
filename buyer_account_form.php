@@ -1,3 +1,6 @@
+<?php
+require ('backend/registration.php');
+?>
 <div>
 	<form action="create_account.php" onsubmit="return buyer_signup()" method="post" id="buyer_account_form">
 		<div class="col">
