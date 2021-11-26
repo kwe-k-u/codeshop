@@ -43,6 +43,9 @@
 
 
 		<!-- login section  -->
+		<?php
+			if (isset($_SESSION) && isset($_SESSION['username'])){ //display only when user is logged out
+		?>
 		<div id="login_section">
 
 			<form action="backend/registration.php" method="post" >
@@ -62,4 +65,5 @@
 				</div>
 			</form>
 		</div>
+		<?php } ?>
 
