@@ -1,6 +1,6 @@
 <?php
-
-require('user_controller.php');
+require ('header.php');
+require('backend/user_controller.php');
 
 session_start();
 
@@ -17,7 +17,7 @@ if(isset($_POST['buyer'])){
 
     if($result === true){
         echo "Data inserted sucessfully";
-        header('Location: ../views/login.php');
+        header('Location: index.php');
     } 
     else {
         echo "Registration  failed";
