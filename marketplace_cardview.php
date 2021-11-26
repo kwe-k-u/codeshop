@@ -21,7 +21,6 @@
           <div class="col">
 
       <a href="product_page.php">
-      <?php  echo $product["description"] ?>
   </a>
           </div>
           <div class="col">

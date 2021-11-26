@@ -1,6 +1,3 @@
-<?php
-require('backend/Upload code.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +11,7 @@ require('backend/Upload code.php');
 	<div id="main_div">
 		<h3>Upload your code</h3>
 
-		<form class="row g-3" enctype="multipart/form-data">
+		<form class="row g-3" action="backend/upload_code.php" enctype="multipart/form-data">
 
 		<!-- project title  -->
 			<div class="col-md-6">
@@ -63,29 +60,14 @@ require('backend/Upload code.php');
 			</div>
 
 
-			<!-- Compiled upload
+
+
+			<!-- listing price  -->
+
 			<div class="col-md-2">
-  <label for="formFileLg" class="form-label">Compiled file</label>
-  <input class="form-control form-control-sm" id="formFileLg" type="file">
-			</div> -->
-
-
-			<!-- listing class  -->
-			<div class="form-check">
-				<label ><strong>Indicate the type of upload</strong></label><br>
-
-				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-				<label class="form-check-label" for="flexRadioDefault1">
-					Generic upload
-				</label>
+  <label for="price" class="form-label">Source Code</label>
+  <input class="form-control form-control-sm" id="price" name = "price" type="number">
 			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-				<label class="form-check-label" for="flexRadioDefault2">
-					Exclusive upload
-				</label>
-			</div>
-
 
 
 			<div class="col-12">

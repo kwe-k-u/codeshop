@@ -8,7 +8,7 @@ class Code extends Connection{
 
 	function add_code($language,$upload_date,$fileloc){
 		// return true or false
-		return $this->query("insert into code(language,update_date, file_location) 
+		return $this->query("insert into code(language,update_date, file_location)
 								values('$language','$upload_date','$fileloc')");
 	}
 
@@ -25,7 +25,6 @@ class Code extends Connection{
     }
 
 
-	}
 
 	function select_all_codes(){
 		// return array or false
@@ -49,13 +48,8 @@ class Code extends Connection{
         return $this->fetch("Select * From code where language Like '%$word%'");
     }
 
-	function pick_random()
-	{
-		return $this->fetch("select * from code order by rand() limit 3");	
 
-	}
 
-	
 
 }
 
