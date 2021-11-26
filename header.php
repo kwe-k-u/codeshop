@@ -45,7 +45,7 @@
 		<!-- login section  -->
 		<div id="login_section">
 
-			<form action="" method="post" onsubmit="return log_in();">
+			<form action="backend/registration.php" method="post" onsubmit="return log_in();">
 				<div class="row">
 					<div class="col"></div>
 					<div class="col-3">
