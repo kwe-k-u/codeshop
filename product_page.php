@@ -1,5 +1,12 @@
 <?php
 require ('backend/add_to_cart.php');
+require ('backend/code_controller.php');
+
+session_start();
+
+if (isset($_GET['id'])) {
+    $sel_prod = select_one_code_controller($_GET['id']);
+}
 ?>
 
 <!doctype html>
