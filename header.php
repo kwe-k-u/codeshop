@@ -44,7 +44,7 @@
 
 		<!-- login section  -->
 		<?php
-			if (isset($_SESSION) && isset($_SESSION['username'])){ //display only when user is logged out
+			if (!(isset($_SESSION) && isset($_SESSION['username']))){ //display only when user is logged out
 		?>
 		<div id="login_section">
 

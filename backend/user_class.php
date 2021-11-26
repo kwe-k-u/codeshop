@@ -5,10 +5,16 @@ require ('Database_class.php');
 class user extends Connection{
 
     function add_user($name, $email, $password, $type){
-		$this->query("insert into users(username, email, password) values('$name', '$email', '$password') ");
-		// $id = $this->getlast("insert into users(username, email, password) values('$name', '$email', '$password') ");
 
-		$id = count(array($this->select_all_user()));
+
+		$this->query("insert into users(username, email, password) values('$name', '$email', '$password'); ");
+
+		$id = $this->get_user_count();
+		echo "<pre>";
+		var_dump($id);
+		echo "</pre>";
+
+
 
 		if ($type === "buyer"){
 			return $this->query("insert into buyers values ($id);"); #insert into buyer
@@ -26,7 +32,7 @@ class user extends Connection{
 
 	function get_user_count(){
 		$response = $this->select_all_user();
-		return count($response);
+		return end($response)["user_id"];
 	}
 
 	function update_customer($id, $name, $email, $password){

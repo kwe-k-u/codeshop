@@ -1,10 +1,5 @@
 <!-- List view  -->
 <section id="listview">
-  <?php
-  echo "<pre>";
-  echo var_dump($products[0]);
-  echo "</pre>";
-   ?>
   <?php foreach ($products as $product) { #iterating through products?>
 
     <div class="row">

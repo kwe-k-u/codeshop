@@ -1,31 +1,35 @@
 <?php
 
 // include ('Database_connection_finalproject.php');
-// require ('upload_code_form.php');
+require ('marketplace_controller.php');
 
 if(isset($_POST['upload_btn']))
 {
-    $screenshots = $_POST['screenshots'];
-    $Sdescription = $_POST['sDescription'];
-    $Ldescription = $_POST['lDescription'];
-    $title = $_POST['Title'];
-    $type = $_POST['flexRadioDefualt'];
-    $input = $_POST['formFileLg'];
+    $language = $_POST['language'];
+    $fileloc = "";
+    $title = $_POST['title'];
+    $desc = $_POST['lDescription'];
+    $s_desc = $_POST['sDescription'];
+    $price = $_POST['price'];
+    $images = ["",""];
+    // $images = $_POST['screenshots'];
+    $user_id = $_POST['user_id'];
+    // $fileloc = $_POST['fileloc'];
 
 
 
-    $insert = mysqli_query($db,"INSERT INTO code (`language`, `upload_date`, 'filelocation') VALUES ('$language','$upload_date','$filelocation')");
-    $insert = mysqli_query($db,"INSERT INTO listing (`title`, `description`, 'short_description') VALUES ('$fullname','$age')");
+    $insert = insert_listing($language, $fileloc, $title, $desc, $s_desc, $price, $user_id, $images);
 
-    if(!$insert)
-    {
-        echo mysqli_error();
+    if($insert === true){
+        echo "Data inserted sucessfully";
+        header('Location: ../marketplace.php');
     }
-    else
-    {
-        echo "Records added successfully.";
+    else {
+        echo "Upload  failed";
+        // header('Location: ../views/register.php');
+        echo '<script>alert("Upload failed failed")</script>';
+
     }
 }
 
-mysqli_close($db);
 ?>
