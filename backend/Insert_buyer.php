@@ -3,7 +3,7 @@
 include ('Database_connection_finalproject.php');
 require ('buyer_account_form');
 include ('Database_credentials_finalproject');
-if(isset($_POST['submit']))
+if(isset($_POST['buyer']))
 {		
     
     $buyer->user_name = $_POST['user_name'];
