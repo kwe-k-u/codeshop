@@ -1,6 +1,8 @@
 <?php
+require ('index.php');
 require ('backend/registration.php');
 ?>
+
 <div>
 	<form action="backend/registration.php" method="post" id="buyer_account_form">
 		<div class="col">

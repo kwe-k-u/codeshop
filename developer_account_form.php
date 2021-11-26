@@ -1,8 +1,9 @@
 <?php
+require ('index.php');
 require ('backend/registration -2.php');
 ?>
 
-
+<!DOCTYPE html>
 <div class="container">
 
 	<form action="backend/registration.php" method="post" id="developer_account_form">
@@ -37,6 +38,7 @@ require ('backend/registration -2.php');
   <p id="number" class="invalid">A <b>number</b></p>
   <p id="length" class="invalid">Minimum <b>8 characters</b></p>
 </div>
+</html>
 
 <script>
 	var myInput = document.getElementById("password");
@@ -97,4 +99,3 @@ myInput.onkeyup = function() {
   }
 }
 </script>
-

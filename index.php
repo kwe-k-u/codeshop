@@ -1,3 +1,8 @@
+<?php
+require ('../backend/code_controller.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

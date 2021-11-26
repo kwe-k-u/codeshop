@@ -1,6 +1,6 @@
 <?php
-
-require('user_controller.php');
+require ('header.php');
+require('backend/user_controller.php');
 
 session_start();
 
