@@ -58,7 +58,7 @@
         Payment was successful. Code will be emailed to you shortly.
       </div>
       <div class="modal-footer">
-        <a href="marketplace.php" class="btn btn-success">Continue shopping</a>
+        <a href="backend/marketplace.php" class="btn btn-success">Continue shopping</a>
       </div>
     </div>
   </div>
