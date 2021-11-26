@@ -12,7 +12,7 @@ if(isset($_POST['add_user'])){
     $password = $_POST['password'];
 
     $hash = password_hash($password,PASSWORD_DEFAULT);
-    
+
 
     // call the add_code_controller function: return true or false
     $result = add_user_controller($name, $email,$hash);
@@ -20,13 +20,13 @@ if(isset($_POST['add_user'])){
 
     if($result === true){
         echo "Data inserted sucessfully";
-        header('Location: ../views/login.php');
-    } 
+        header('Location: ../marketplace.php');
+    }
     else {
         echo "Registration  failed";
         // header('Location: ../views/register.php');
         echo '<script>alert("Login failed")</script>';
-        
+
     }
 
 }
@@ -57,22 +57,22 @@ if(isset($_POST['login_user'])){
 
             echo '<script>alert("Logged In)</script>';
             header('Location: ../index.php');
-    } 
+    }
     else{
         echo '<script>alert("Login failed")</script>';
-       
-        
-        // header('Location: login.php');
-       
 
-    } 
+
+        // header('Location: login.php');
+
+
+    }
 }
 
 
 if(isset($_GET['logout'])){
     session_destroy();
     unset($_SESSION['user_id']);
-    header('location: ../index.php');    
+    header('location: ../index.php');
 
 }
 

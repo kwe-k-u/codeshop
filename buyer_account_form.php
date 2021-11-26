@@ -1,5 +1,5 @@
 <div>
-	<form action="create_account.php" onsubmit="return buyer_signup()" method="post" id="buyer_account_form">
+	<form action="backend/registration.php" onsubmit="return true" method="post" id="buyer_account_form">
 		<div class="col">
 			<h5 class="text-uppercase">create a buyer account</h5>
 			<div>
@@ -12,7 +12,7 @@
 			</div>
 
 			<div>
-				<input type="password" id= "psw" name="psw"  placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>>
+				<input type="password" id= "psw" name="psw"  placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 			</div>
 
 			<div>
@@ -47,23 +47,23 @@
 	// When the user clicks outside of the password field, hide the message box
 	myInputs.onblur = function() {
 	document.getElementById("note").style.display = "none";
-	} 
+	}
 
 	// When the user starts to type something inside the password field
 myInputs.onkeyup = function() {
   // Validate lowercase letters
   var lowerCaseLetters = /[a-z]/g;
-  if(myInputs.value.match(lowerCaseLetters)) {  
+  if(myInputs.value.match(lowerCaseLetters)) {
     letters.classList.remove("invalid");
     letters.classList.add("valid");
   } else {
     letters.classList.remove("valid");
     letters.classList.add("invalid");
   }
-  
+
   // Validate capital letters
   var upperCaseLetters = /[A-Z]/g;
-  if(myInputs.value.match(upperCaseLetters)) {  
+  if(myInputs.value.match(upperCaseLetters)) {
     caps.classList.remove("invalid");
     caps.classList.add("valid");
   } else {
@@ -73,14 +73,14 @@ myInputs.onkeyup = function() {
 
   // Validate numbers
   var numbers = /[0-9]/g;
-  if(myInputs.value.match(numbers)) {  
+  if(myInputs.value.match(numbers)) {
     num.classList.remove("invalid");
     num.classList.add("valid");
   } else {
     num.classList.remove("valid");
     num.classList.add("invalid");
   }
-  
+
   // Validate length
   if(myInputs.value.length >= 8) {
     leng.classList.remove("invalid");

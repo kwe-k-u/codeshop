@@ -29,8 +29,7 @@ const checkEmail = (email) =>{
 
 //check if string meets passed length requirements
 const checkLength = (field, minSize, maxSize) => {
-	let  content = field.val();
-	if (content.length < minSize || content.length > maxSize){
+	if (field.val().length < minSize || field.val().length > maxSize){
 		displayError(field, "Character count must be between " + minSize+ " and " +maxSize);
 		return 1;
 	}
@@ -45,8 +44,14 @@ const checkSignUp = (username, email, password, cPassword) =>{
 
 	let errorCount = 0;
 
-	errorCount += checkEmail(email);
+	// const test = getElement("email");
+	console.error(test.val);
 
+	errorCount += checkEmail(email);
+	console.error(username.val());
+	console.error(email.val());
+	console.error(password.val());
+	console.error(cPassword.val());
 	errorCount += checkLength(username, 4,10);
 	errorCount += checkLength(password, 4,10);
 	errorCount += checkLength(cPassword, 4,10);
@@ -60,6 +65,11 @@ const checkSignUp = (username, email, password, cPassword) =>{
 	return errorCount;
 
 }
+
+// const getElement = (id) =>{
+// 	console.log(document.getElementById("email").val);
+// 	return document.getElementById(id);
+// }
 
 //displays errors to the  screen
 const displayError = (tag, message) => {
