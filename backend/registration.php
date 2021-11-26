@@ -4,7 +4,7 @@ require('user_controller.php');
 
 session_start();
 
-if(isset($_POST['add_user'])){
+if(isset($_POST['buyer'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
