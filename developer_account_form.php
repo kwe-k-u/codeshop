@@ -1,8 +1,9 @@
 <?php
+require ('index.php');
 require ('backend/registration -2.php');
 ?>
 
-
+<!DOCTYPE html>
 <div class="container">
 
 	<form action="create_account.php" method="post" id="developer_account_form">
@@ -98,3 +99,4 @@ myInput.onkeyup = function() {
 }
 </script>
 
+</html>
