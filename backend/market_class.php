@@ -10,6 +10,9 @@ class marketplace extends Connection{
 		return $this->fetch("select * from listing;");
 	}
 
+	function search_by_id($id){
+		return $this->fetchOne("select * from listing where listing_id = $id;");
+	}
 
 	function search_listing($name){
 		$result = $this->fetch("select * from listing where title like '%$name%' or description like '%$name%' or short_description like '%$name%';");

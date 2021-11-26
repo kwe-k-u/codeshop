@@ -21,4 +21,9 @@
 		$market_instance = new marketplace();
 		return $market_instance->search_listing($name);
 	}
+
+	function search_by_id($id){
+		$market_instance = new marketplace();
+		return $market_instance->search_by_id($id);
+	}
 ?>
