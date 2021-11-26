@@ -1,6 +1,8 @@
 <?php
-require ('backend/cart_controller');
+require ('backend/cart_controller.php');
+require ('backend/add_to_cart.php');
 ?>
+
 <!doctype html>
 <html lang="en">
 
