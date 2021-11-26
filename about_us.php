@@ -64,7 +64,7 @@
 		<div class="col-md-6 col-lg-3">
 			<div class="card bg-light">
 				<div class="card-body text-center">
-					<img src="https://randomuser.me/api/portraits/women/11.jpg" clas="rounded-circle mb-3" alt="">
+					<img src="image\naa.jpeg" clas="rounded-circle mb-3" id="naa_img"alt="">
 					<h3 class="card-title mb-3">Naa Korlike Gyan</h3>
 					<p class="card-text">Database Developer</p>
 					<a href="https://www.linkedin.com/in/naa-korlikie-ologo-gyan-87b40b194/" target="_blank"><i class="bi bi-linkedin text-dark mx-1"></i></a>
