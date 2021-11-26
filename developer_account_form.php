@@ -1,5 +1,6 @@
-
-
+<?php
+require ('backend/registration -2.php');
+?>
 
 
 <div class="container">
