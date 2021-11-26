@@ -2,7 +2,7 @@
 require ('backend/code_controller.php');
 session_start();
 
-$code = select_all_products_controller();
+$code = select_all_code_controller();
 ?>
 
 <!doctype html>
