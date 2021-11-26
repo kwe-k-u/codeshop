@@ -45,7 +45,7 @@
 		<!-- login section  -->
 		<div id="login_section">
 
-			<form action="" method="post" onsubmit="return log_in();">
+			<form action="backend/registration.php" method="post" >
 				<div class="row">
 					<div class="col"></div>
 					<div class="col-3">
@@ -57,7 +57,7 @@
 						<small></small>
 					</div>
 					<div class="col-2">
-						<button type="submit" class="btn btn-primary ">Login</button>
+						<button type="submit" class="btn btn-primary" name="login">Login</button>
 					</div>
 				</div>
 			</form>

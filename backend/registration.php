@@ -57,9 +57,9 @@ if(isset($_POST['developer'])){
 }
 
 
-if(isset($_POST['login_user'])){
-    $email = $_POST['email'];
-    $pword = $_POST['password'];
+if(isset($_POST['login'])){
+    $email = $_POST['login_email'];
+    $password = $_POST['login_password'];
 
 
     $result = login_user_controller($email);
@@ -71,13 +71,13 @@ if(isset($_POST['login_user'])){
                 $_SESSION['user_role'] = 1;
             }
 
-            $_SESSION['user_id'] = $result['username'];
+            $_SESSION['username'] = $result['username'];
             $_SESSION['user_id'] = $result['user_id'];
             $_SESSION['email'] = $result['email'];
 
 
             echo '<script>alert("Logged In)</script>';
-            header('Location: index.php');
+            header('Location: ../marketplace.php');
     }
     else{
         echo '<script>alert("Login failed")</script>';

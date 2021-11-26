@@ -19,9 +19,9 @@ class user extends Connection{
 	}
 
 	function delete_user($id){
-		return $this->query("delete from user where user_id = '$id'");
-		return $this->query("delete from buyer where user_id = '$id'"); #delete from buyer
-		return $this->query("delete from developer where user_id = '$id'"); #delete from developer
+		return $this->query("delete from users where user_id = '$id'");
+		return $this->query("delete from buyers where user_id = '$id'"); #delete from buyer
+		return $this->query("delete from developers where user_id = '$id'"); #delete from developer
 	}
 
 	function get_user_count(){
@@ -30,19 +30,19 @@ class user extends Connection{
 	}
 
 	function update_customer($id, $name, $email, $password){
-		return $this->query("update user set username='$name', email='$email', password='$password' where user_id = $id");
+		return $this->query("update users set username='$name', email='$email', password='$password' where user_id = $id");
 	}
 
 	function select_all_user(){
-		return $this->fetch("select * from user");
+		return $this->fetch("select * from users");
 	}
 
 	function select_one_user($id){
-		return $this->fetchOne("select * from user where user_id=$id");
+		return $this->fetchOne("select * from users where user_id=$id");
 	}
 
 	function login_user($email){
-		return $this->fetchOne("select * from user where email='$email'");
+		return $this->fetchOne("select * from users where email='$email'");
 	}
 }
 ?>
