@@ -1,7 +1,12 @@
 <?php
 
-// require('Database_credentials_finalproject.php');
-require("../db_cred.php");
+// require("../db_cred.php");
+
+define("servername", "localhost");
+define("username", "root");
+define("password", "");
+define("dbname", "code_shop");
+
 
 class Connection{
 

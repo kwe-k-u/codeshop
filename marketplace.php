@@ -15,6 +15,7 @@
   <div class="row">
 
 
+
     <!-- side bar  -->
     <section class="container col-3 cs-secondary align-content-center" id="sidebar">
 
@@ -107,7 +108,7 @@
           </div>
         </div>
       </section>
-
+      <?php require_once "backend/marketplace.php" ?>
       <?php require_once "marketplace_list.php" ?>
       <?php require_once "marketplace_cardview.php" ?>
       <script type="text/javascript" src="./functions/marketplace.js"></script>

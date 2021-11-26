@@ -82,15 +82,16 @@ CREATE TABLE listing (
 	title VARCHAR(100) NOT NULL,
 	description TEXT NOT NULL,
 	short_description TINYTEXT,
+	price FLOAT NOT NULL,
 	PRIMARY KEY (listing_id)
 
 );
 
-INSERT INTO listing (listing_id, title, description, short_description) VALUES
-(1,"website code","this is a website...",""),
-(2,"app design template code","it helps with easy...",""),
-(3,"Inventory management app for eccorment build with flutter","for developing a wor management application with your deied functionalities", ""),
-(4,"movie streaming site","an online movie streamin site that....","");
+INSERT INTO listing (listing_id, title, description, short_description,price) VALUES
+(1,"website code","this is a website...","", 599.00),
+(2,"app design template code","it helps with easy...","", 250.00),
+(3,"Inventory management app for eccorment build with flutter","for developing a wor management application with your deied functionalities", "", 900.00),
+(4,"movie streaming site","an online movie streamin site that....","", 100.00);
 
 -- table to keep track of Code_ownership
 CREATE TABLE code_ownership(
@@ -160,7 +161,7 @@ INSERT INTO order_table (listing_id, buyer_id, order_date) VALUES
 (4,6, "2017-01-01" );
 
 
--- table to track transactions 
+-- table to track transactions
 CREATE TABLE transactions (
 	transaction_id INT AUTO_INCREMENT,
 	order_id INT,

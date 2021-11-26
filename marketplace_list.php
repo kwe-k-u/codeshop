@@ -1,6 +1,11 @@
 <!-- List view  -->
 <section id="listview">
-  <?php for ($i = 0; $i < 20; $i++) { ?>
+  <?php
+  echo "<pre>";
+  echo var_dump($products[0]);
+  echo "</pre>";
+   ?>
+  <?php foreach ($products as $product) { #iterating through products?>
 
     <div class="row">
 
@@ -13,14 +18,14 @@
 
       <!-- product name and description -->
       <div class="col">
-        <p><strong>Ecommerce management application built with php and java script</strong></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur, beatae voluptatibus ad amet perferendis repudiandae omnis sunt deserunt recusandae aut autem necessitatibus hic architecto ea illo magnam eos et voluptatum suscipit culpa pariatur eius. Vel maxime in doloribus officia.</p>
+        <p><strong><?php  echo $product["title"] ?></strong></p>
+        <p><?php  echo $product["description"] ?></p>
       </div>
 
       <!-- price and add to cart  -->
       <div class="col ">
         <p>GHC</p>
-        <p><strong>259</strong></p>
+        <p><strong><?php  echo $product["price"] ?></strong></p>
 
       </div>
       <div class="col">
