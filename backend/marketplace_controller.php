@@ -26,4 +26,10 @@
 		$market_instance = new marketplace();
 		return $market_instance->search_by_id($id);
 	}
+
+
+	function find_user_by_id($id){
+		$market_instance = new marketplace();
+		return $market_instance->find_user_by_id($id);
+	}
 ?>

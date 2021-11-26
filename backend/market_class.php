@@ -20,6 +20,11 @@ class marketplace extends Connection{
 
 	}
 
+	function find_user_by_id($id){
+		$result = $this->fetchOne("select * from users where user_id = $id;");
+		return $result;
+	}
+
 	function get_all_code(){
 		return $this->fetch("select * from code;");
 

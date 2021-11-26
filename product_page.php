@@ -26,6 +26,10 @@
     } else {
       Header("Location:marketplace.php");
     }
+
+
+
+
     ?>
 
 
@@ -68,44 +72,64 @@
           <div class="col-3 " id="r_col">
 
             <!-- purchase action buttons -->
+            <div class="col">
+
             <div class="d-grid gap-1 d-md-flex justify-content-md-end">
               <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
               <button class="btn btn-primary" type="button">Buy now </button>
             </div>
 
+            <div class="d-grid py-5 gap-1 d-md-flex justify-content-md-end">
+              <button class="btn btn-warning me-md-2" type="button">Update</button>
+              <button class="btn btn-danger" type="button">Delete </button>
+            </div>
+            </div>
+
 
             <!-- review section  -->
             <section id="review_section">
-              <h3><strong>Reviews</strong></h3>
+              <!-- <h3><strong>Reviews</strong></h3> -->
+              <?php include("backend/reviews_controller.php");
 
-              <!-- review  -->
-              <div class="review">
+              $reviews = get_all_reviews($_GET["id"]);
 
-                <!-- rating and user name  -->
-                <div class="row" id="rating">
-                  <strong>Kelvin someone</strong>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+
+              //<!-- review  -->
+              foreach ($reviews as $rev) { ?>
+                <div class="review">
+
+                  <!-- rating and user name  -->
+                  <div class="row" id="rating">
+                    <strong><?php echo find_user_by_id($rev["reviewer_id"]); ?></strong>
+
+                    <!-- star rating  -->
+                    <?php for ($i = 0; $i < intval($rev["rating"]); $i++){ ?>
+                    <i class="bi bi-star-fill"></i>
+                    <?php } ?>
+                  </div>
+
+
+                  <!-- review description -->
+                  <p><?php echo $product["content"] ?></p>
+                  <div class="btn-group py-2" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-warning">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
                 </div>
+              <?php }
+
+              ?>
 
 
-                <!-- review description -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia ullam nam perferendis assumenda hic dignissimos obcaecati nesciunt repellendus dolore. Saepe, error nemo quia fugiat praesentium consequatur harum tempora quidem excepturi assumenda rerum nulla, laboriosam animi est, itaque hic id minima! Nobis vel nisi sint rem inventore animi fugit saepe.</p>
-                <div class="btn-group py-2" role="group" aria-label="Basic outlined example">
-                  <button type="button" class="btn btn-warning">Update</button>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </div>
-              </div>
-
-              <form action="" method="post">
+              <!-- create a review form
+              <form action="backend/reviews.php" method="post">
                 <div class="col">
 
-                  <textarea name="rev_des" id="rev_des" rows="7"></textarea><br>
-                  <button type="submit" class="btn btn-success">Post Review</button>
+                <div class="py-1">Rating<input type="number"  min=0 max=5 name="rating" id=""></div>
+                  <textarea name="review" id="rev_des" rows="7"></textarea><br>
+                  <button type="submit" name="sub_review" class="btn btn-success">Post Review</button>
                 </div>
-              </form>
+              </form> -->
 
             </section>
 
