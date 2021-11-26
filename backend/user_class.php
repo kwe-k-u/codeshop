@@ -10,9 +10,6 @@ class user extends Connection{
 		$this->query("insert into users(username, email, password) values('$name', '$email', '$password'); ");
 
 		$id = $this->get_user_count();
-		echo "<pre>";
-		var_dump($id);
-		echo "</pre>";
 
 
 

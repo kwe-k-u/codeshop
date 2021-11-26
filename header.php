@@ -11,6 +11,7 @@
 
 <title>CodeShop </title>
 </head>
+<?php session_start(); ?>
 
 <body>
 

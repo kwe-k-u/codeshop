@@ -67,7 +67,6 @@
 				<label for="price" class="form-label">Price</label>
 				<input class="form-control form-control-sm" id="price" name="price" type="number">
 			</div>
-			<?php  echo $_SESSION["user_id"];?>
 			<!-- hidden user id pass  -->
 			<input type="hidden" id="custId" name="user_id" value= "<?php  echo $_SESSION["user_id"];?>" >
 			<div class="col-12">

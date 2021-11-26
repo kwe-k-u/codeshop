@@ -16,31 +16,30 @@ class marketplace extends Connection{
 	}
 
 	function get_last_listing(){
-		return end($this->get_all_listing())["listing_id"];
+		$result = $this->get_all_listing();
+
+		return intval(end($result)["listing_id"]);
+
 	}
 
 	function get_last_code(){
-		return end($this->get_all_listing())["code_id"];
+		$result = $this->get_all_code();
+		return intval(end($result)["code_id"]);
 	}
 
 
 	function insert_listing($language, $fileloc, $title, $desc, $s_desc, $price, $user_id, $imgs){
 		$date = date('Y-m-d');
-		$listing_id = $this->get_last_listing();
+		$listing_id = $this->get_last_listing()+1;
 		$code_id = $this->get_last_code();
-		echo $language ."<br>";
-		echo $fileloc ."<br>";
-		echo $title ."<br>";
-		echo $desc ."<br>";
-		echo $s_desc ."<br>";
-		echo $price ."<br>";
-		echo $user_id ."<br>";
+
+
 
 
 		// code
-		 return $this->query("INSERT INTO code value ('$language','$date', '$fileloc');");
+		 $this->query("INSERT INTO code(language,upload_date,file_location) values ('$language','$date', '$fileloc');");
 		//  listing
-		 $this->query("INSERT INTO listing(listing_id, title, description, short_description,price)
+		  $this->query("INSERT INTO listing(listing_id, title, description, short_description,price)
 		  value ('$listing_id','$title', '$desc', '$s_desc', $price);");
 
 		//listing image
