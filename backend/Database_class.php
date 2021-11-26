@@ -1,6 +1,12 @@
-<?php 
+<?php
 
-require('Database_credentials_finalproject.php');
+// require("../db_cred.php");
+
+define("servername", "localhost");
+define("username", "root");
+define("password", "");
+define("dbname", "code_shop");
+
 
 class Connection{
 
@@ -10,7 +16,7 @@ class Connection{
 
 	function connection(){
 
-		$this->db = mysqli_connect(server, user, password, database);
+		$this->db = mysqli_connect(servername, username, password, dbname);
 
 		if(mysqli_connect_errno()){
 			return false;
@@ -41,7 +47,7 @@ class Connection{
 			return mysqli_fetch_all($this->results, MYSQLI_ASSOC);
 		}
 		return false;
-		
+
 	}
 
 	function fetchOne($query){
@@ -52,9 +58,12 @@ class Connection{
 		return false;
 	}
 
-	function getlast($query){
-		if($this->query($query)) {
+	function getlast(){
+		// if($this->query($query)) {
+
+		if($this->connection() != false){
 			return  mysqli_insert_id($this->db);
+
 		}
 		return false;
 	}

@@ -1,6 +1,3 @@
-<?php
-require('backend/Upload code.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,19 +11,19 @@ require('backend/Upload code.php');
 	<div id="main_div">
 		<h3>Upload your code</h3>
 
-		<form class="row g-3" enctype="multipart/form-data">
+		<form class="row g-3" method="post" action="backend/upload_code.php" enctype="multipart/form-data">
 
-		<!-- project title  -->
+			<!-- project title  -->
 			<div class="col-md-6">
 				<label for="title" class="form-label">Project Title</label>
-				<input type="text" class="form-control" id="title">
+				<input type="text" class="form-control" name="title" id="title">
 			</div>
 
 			<br>
 			<!-- descriptions short  -->
 			<div class="col-md-6">
 				<label for="sDescription" class="form-label">Short Description</label>
-				<input type="text" class="form-control" id="sDescription" placeholder="Your cool project in 50 characters">
+				<input type="text" class="form-control" name="sDescription" id="sDescription" placeholder="Your cool project in 50 characters">
 			</div>
 
 			<br>
@@ -39,14 +36,14 @@ require('backend/Upload code.php');
 			<br>
 			<!-- screen shots  -->
 			<div class="col-md-6">
-  <label for="screenshots" class="form-label">Screenshots</label>
-  <input class="form-control form-control-md" id="screenshots" type="file" multiple>
+				<label for="screenshots" class="form-label">Screenshots</label>
+				<input class="form-control form-control-md" name="screenshots" id="screenshots" type="file" multiple>
 			</div>
 
 			<!-- programming language  -->
 			<div class="col-md-4">
-				<label for="inputState" class="form-label">Programming Language</label>
-				<select id="inputState" class="form-select">
+				<label for="language" class="form-label">Programming Language</label>
+				<select id="language" name="language" class="form-select">
 					<option selected>Choose...</option>
 					<option>Flutter</option>
 					<option>Java</option>
@@ -58,36 +55,20 @@ require('backend/Upload code.php');
 
 			<!-- Code upload -->
 			<div class="col-md-2">
-  <label for="formFileLg" class="form-label">Source Code</label>
-  <input class="form-control form-control-sm" id="formFileLg" type="file">
+				<label for="formFileLg" class="form-label">Source Code</label>
+				<input class="form-control form-control-sm" id="formFileLg" type="file">
 			</div>
 
 
-			<!-- Compiled upload
+
+
+			<!-- listing price  -->
 			<div class="col-md-2">
-  <label for="formFileLg" class="form-label">Compiled file</label>
-  <input class="form-control form-control-sm" id="formFileLg" type="file">
-			</div> -->
-
-
-			<!-- listing class  -->
-			<div class="form-check">
-				<label ><strong>Indicate the type of upload</strong></label><br>
-
-				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-				<label class="form-check-label" for="flexRadioDefault1">
-					Generic upload
-				</label>
+				<label for="price" class="form-label">Price</label>
+				<input class="form-control form-control-sm" id="price" name="price" type="number">
 			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-				<label class="form-check-label" for="flexRadioDefault2">
-					Exclusive upload
-				</label>
-			</div>
-
-
-
+			<!-- hidden user id pass  -->
+			<input type="hidden" id="custId" name="user_id" value= "<?php  echo $_SESSION["user_id"];?>" >
 			<div class="col-12">
 				<button type="submit" class="btn btn-primary" name="upload_btn">Upload Code</button>
 			</div>

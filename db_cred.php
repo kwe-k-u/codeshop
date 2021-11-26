@@ -2,6 +2,6 @@
     define("servername", "localhost");
     define("username", "root");
     define("password", "");
-    define("dbname", "");
+    define("dbname", "code_shop");
 
 ?>

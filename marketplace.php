@@ -22,32 +22,8 @@ $code = select_all_products_controller();
   <div class="row">
 
 
-    <!-- side bar  -->
-    <section class="container col-3 cs-secondary align-content-center" id="sidebar">
-
-      <h3>Categories</h3>
-      <div><a href="marketplace.php"><h5>All Categories</h5></a></div>
-      <div><a href="marketplace.php?category=desktop">Desktop applications</a></div>
-      <div><a href="marketplace.php?category=mobile">Mobile applications</a></div>
-      <div><a href="marketplace.php?category=server">Server systems applications</a></div>
-      <div><a href="marketplace.php?category=web">Web development</a></div>
 
 
-      <h3>Filters</h3>
-      <form action="marketplace.php" method="get" id="filter_form">
-        <div>Upload date
-          <input type="date" name="filter_date" >
-        </div>
-          <div>Price Range
-            <input type="range" min=200 max=2500 name="filter_price_range" oninput="sliderChange(this.value)">
-            <p id="slider_value">200</p>
-          </div>
-
-
-          <div>Rating<input type="number" name="filter_rating" id=""></div>
-          <button onsubmit="filter()" id="filter-apply">Apply</button>
-        </form>
-      </section>
 
       <!-- main section  -->
       <section class="container col-9" id="main">
@@ -55,47 +31,13 @@ $code = select_all_products_controller();
         <!-- top row with search and display options  -->
         <section id="top-section">
           <div class="row align-content-center">
-            <!-- Search bar  -->
-            <div class="col">
-              <input type="search" name="search" id="search bar" placeholder="Search">
-            </div>
 
-            <!-- Sort by  -->
 
             <div class="col">
-              <div class="dropdown mx-1">
-                Sort By:
-                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                  Best Match
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                  <li><a class="dropdown-item" href="#">Upload Date</a></li>
-                  <li><a class="dropdown-item" href="#">Most purchased</a></li>
-                  <li><a class="dropdown-item" href="#">Cheapest</a></li>
-                </ul>
-              </div>
-          </div>
-
-          <!-- type of upload (generic, exclusive)  -->
-          <div class="col">
-            <div class="btn-group" role="group" id="type-select">
-              <div><a href="#" class="btn btn-primary mt-auto">Show All</a></div>
-              <div><a href="#" class="btn btn-primary mt-auto">Exclusive</a></div>
-              <div><a href="#" class="btn btn-primary mt-auto">Generic</a></div>
-
             </div>
 
-          </div>
 
-          <!-- list arrangement  -->
-          <div class="col">
-            <div class="btn-group" role="group" id="content-display">
 
-              <button id="display_list" onclick="showList();" class="btn btn-primary mt-auto"><i class="bi bi-list-stars"></i></button>
-              <button id="display_grid" onclick="showGrid();" class="btn btn-primary mt-auto"><i class="bi bi-grid-3x3-gap-fill"></i></button>
-
-            </div>
-          </div>
 
 
 
@@ -114,9 +56,15 @@ $code = select_all_products_controller();
           </div>
         </div>
       </section>
+      <?php require_once "backend/marketplace.php" ?>
+      <?php
+      if ($products){
+        require_once "marketplace_list.php";
+      } else {
+        echo "<h1>No Listings to display</h1>";
+      }
 
-      <?php require_once "marketplace_list.php" ?>
-      <?php require_once "marketplace_cardview.php" ?>
+      ?>
       <script type="text/javascript" src="./functions/marketplace.js"></script>
     </section>
 

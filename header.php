@@ -11,7 +11,9 @@
 
 <title>CodeShop </title>
 </head>
+<?php session_start(); ?>
 
+<?php require_once "backend/marketplace.php"; ?>
 <body>
 
 	<nav id="nav">
@@ -30,9 +32,13 @@
 		</div>
 
 
-		<div id="links">
-			<input type="search" placeholder="search">
-			<div>
+		<form action="marketplace.php" id="links" method="get">
+				<div class="input-group">
+					<input type="search" name="search_field" placeholder="search">
+					<button type="submit"  name="search_btn" class="btn btn-light">Search</button>
+				</div>
+			</form>
+
 				<a href="marketplace.php"><i class="bi bi-shop-window"></i>MarketPlace</a>
 				<a href="info.php"><i class="bi bi-question"></i>Help</a>
 
@@ -43,9 +49,12 @@
 
 
 		<!-- login section  -->
+		<?php
+			if (!(isset($_SESSION) && isset($_SESSION['username']))){ //display only when user is logged out
+		?>
 		<div id="login_section">
 
-			<form action="" method="post" onsubmit="return log_in();">
+			<form action="backend/registration.php" method="post" >
 				<div class="row">
 					<div class="col"></div>
 					<div class="col-3">
@@ -57,9 +66,10 @@
 						<small></small>
 					</div>
 					<div class="col-2">
-						<button type="submit" class="btn btn-primary ">Login</button>
+						<button type="submit" class="btn btn-primary" name="login">Login</button>
 					</div>
 				</div>
 			</form>
 		</div>
+		<?php } ?>
 
