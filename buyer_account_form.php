@@ -1,5 +1,5 @@
 <div>
-	<form action="backend/registration.php" onsubmit="return true" method="post" id="buyer_account_form">
+	<form action="backend/registration.php" method="post" id="buyer_account_form">
 		<div class="col">
 			<h5 class="text-uppercase">create a buyer account</h5>
 			<div>

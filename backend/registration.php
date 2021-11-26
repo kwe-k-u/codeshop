@@ -4,6 +4,7 @@ require('user_controller.php');
 
 session_start();
 
+//buyer sign up
 if(isset($_POST['buyer'])){
     $name = $_POST['username'];
     $email = $_POST['email'];
@@ -13,17 +14,43 @@ if(isset($_POST['buyer'])){
     $hash = password_hash($password,PASSWORD_DEFAULT);
 
 
-    $result = add_user_controller($name, $email,$hash);
+    $result = add_user_controller($name, $email,$hash,"buyer");
 
 
     if($result === true){
         echo "Data inserted sucessfully";
-        header('Location: ../views/login.php');
+        header('Location: ../marketplace.php');
     }
     else {
         echo "Registration  failed";
         // header('Location: ../views/register.php');
-        echo '<script>alert("Login failed")</script>';
+        echo '<script>alert("Registeration failed")</script>';
+
+    }
+
+}
+
+//developer sign up
+if(isset($_POST['developer'])){
+    $name = $_POST['user_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+
+    $hash = password_hash($password,PASSWORD_DEFAULT);
+
+
+    $result = add_user_controller($name, $email,$hash,"developer");
+
+
+    if($result === true){
+        echo "Data inserted sucessfully";
+        header('Location: ../marketplace.php');
+    }
+    else {
+        echo "Registration  failed";
+        // header('Location: ../views/register.php');
+        echo '<script>alert("Sign up failed")</script>';
 
     }
 

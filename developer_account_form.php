@@ -4,7 +4,7 @@
 
 <div class="container">
 
-	<form action="create_account.php" method="post" id="developer_account_form">
+	<form action="backend/registration.php" method="post" id="developer_account_form">
 		<div class="col">
 			<h5 class="text-uppercase">create a developer account</h5>
 			<div class >

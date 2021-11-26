@@ -55,7 +55,8 @@ class Connection{
 
 	function getlast($query){
 		if($this->query($query)) {
-			return  mysqli_insert_id($this->db);
+			$va=  mysqli_insert_id($this->db);
+			return $va;
 		}
 		return false;
 	}
