@@ -49,9 +49,9 @@
         <!-- top row with search and display options  -->
         <section id="top-section">
           <div class="row align-content-center">
-            <!-- Search bar  -->
+
+
             <div class="col">
-              <input type="search" name="search" id="search bar" placeholder="Search">
             </div>
 
             <!-- Sort by  -->
@@ -109,8 +109,15 @@
         </div>
       </section>
       <?php require_once "backend/marketplace.php" ?>
-      <?php require_once "marketplace_list.php" ?>
-      <?php require_once "marketplace_cardview.php" ?>
+      <?php
+      if ($products){
+        require_once "marketplace_list.php";
+        require_once "marketplace_cardview.php";
+      } else {
+        echo "<h1>No Listings to display</h1>";
+      }
+
+      ?>
       <script type="text/javascript" src="./functions/marketplace.js"></script>
     </section>
 

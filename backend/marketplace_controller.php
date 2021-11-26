@@ -15,4 +15,10 @@
 
 
 	}
+
+
+	function search_listing($name){
+		$market_instance = new marketplace();
+		return $market_instance->search_listing($name);
+	}
 ?>

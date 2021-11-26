@@ -10,6 +10,13 @@ class marketplace extends Connection{
 		return $this->fetch("select * from listing;");
 	}
 
+
+	function search_listing($name){
+		$result = $this->fetch("select * from listing where title like '%$name%' or description like '%$name%' or short_description like '%$name%';");
+		return $result;
+
+	}
+
 	function get_all_code(){
 		return $this->fetch("select * from code;");
 

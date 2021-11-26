@@ -1,5 +1,4 @@
 <?php
-require ('backend/cart_controller');
 ?>
 <!doctype html>
 <html lang="en">

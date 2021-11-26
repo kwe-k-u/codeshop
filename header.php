@@ -13,6 +13,7 @@
 </head>
 <?php session_start(); ?>
 
+<?php require_once "backend/marketplace.php"; ?>
 <body>
 
 	<nav id="nav">
@@ -31,9 +32,13 @@
 		</div>
 
 
-		<div id="links">
-			<input type="search" placeholder="search">
-			<div>
+		<form action="marketplace.php" id="links" method="get">
+				<div class="input-group">
+					<input type="search" name="search_field" placeholder="search">
+					<button type="submit"  name="search_btn" class="btn btn-light">Search</button>
+				</div>
+			</form>
+
 				<a href="marketplace.php"><i class="bi bi-shop-window"></i>MarketPlace</a>
 				<a href="info.php"><i class="bi bi-question"></i>Help</a>
 
