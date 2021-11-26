@@ -14,6 +14,11 @@ class marketplace extends Connection{
 		return $this->fetchOne("select * from listing where listing_id = $id;");
 	}
 
+	function get_product_owner($listing_id){
+		$li = $this->fetchOne("select * from code_ownership where listing_id = $listing_id;");
+		return find_user_by_id($li["developer_id"]);
+	}
+
 	function search_listing($name){
 		$result = $this->fetch("select * from listing where title like '%$name%' or description like '%$name%' or short_description like '%$name%';");
 		return $result;
@@ -35,6 +40,14 @@ class marketplace extends Connection{
 
 		return intval(end($result)["listing_id"]);
 
+	}
+
+	function remove_listing($id){
+		 $this->query("DELETE FROM order_table where listing_id = $id;");
+		 $this->query("DELETE FROM code_ownership where listing_id = $id;");
+		 $this->query("DELETE FROM listing_images where listing_id = $id;");
+		 $this->query("DELETE FROM reviews where listing_id = $id;");
+		return $this->query("DELETE FROM listing where listing_id = $id;");
 	}
 
 	function get_last_code(){

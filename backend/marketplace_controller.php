@@ -27,6 +27,18 @@
 		return $market_instance->search_by_id($id);
 	}
 
+	function remove_listing($id){
+		$market_instance = new marketplace();
+		return $market_instance->remove_listing($id);
+
+	}
+
+
+	function get_product_owner($id){
+		$market_instance = new marketplace();
+		return $market_instance->get_product_owner($id)["username"];
+
+	}
 
 	function find_user_by_id($id){
 		$market_instance = new marketplace();

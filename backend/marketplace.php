@@ -12,4 +12,13 @@
 
 
 	}
+
+	if(isset($_POST['del_btn'])){
+		$id = $_POST['listing'];
+
+		$products = remove_listing($id);
+
+
+	}
+
 ?>

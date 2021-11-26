@@ -60,7 +60,7 @@
           <div class="col-6 ">
 
             <p><strong><?php echo $product["title"] ?></strong></p>
-            <p>By Duada</p>
+            <p>By <?php echo get_product_owner($product["listing_id"]); ?></p>
             <p><?php echo $product["description"] ?></p>
 
 
@@ -74,15 +74,22 @@
             <!-- purchase action buttons -->
             <div class="col">
 
-            <div class="d-grid gap-1 d-md-flex justify-content-md-end">
-              <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
-              <button class="btn btn-primary" type="button">Buy now </button>
-            </div>
+              <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">Add to cart</button>
+                <button class="btn btn-primary" type="button">Buy now </button>
+              </div>
 
-            <div class="d-grid py-5 gap-1 d-md-flex justify-content-md-end">
-              <button class="btn btn-warning me-md-2" type="button">Update</button>
-              <button class="btn btn-danger" type="button">Delete </button>
-            </div>
+                <?php
+
+                if (get_product_owner($product["listing_id"]) === find_user_by_id($_SESSION["user_id"])["username"]){ ?>
+                <div class="d-grid py-5 gap-1 d-md-flex justify-content-md-end">
+                  <button class="btn btn-warning me-md-2" type="button">Update</button>
+                  <form action="marketplace.php" method="post">
+                    <input type="hidden" name="listing" value=<?php echo $product["listing_id"]?>>
+                    <button class="btn btn-danger" name="del_btn" type="submit">Delete </button>
+                  </form>
+                </div>
+              <?php } ?>
             </div>
 
 
@@ -103,8 +110,8 @@
                     <strong><?php echo find_user_by_id($rev["reviewer_id"]); ?></strong>
 
                     <!-- star rating  -->
-                    <?php for ($i = 0; $i < intval($rev["rating"]); $i++){ ?>
-                    <i class="bi bi-star-fill"></i>
+                    <?php for ($i = 0; $i < intval($rev["rating"]); $i++) { ?>
+                      <i class="bi bi-star-fill"></i>
                     <?php } ?>
                   </div>
 

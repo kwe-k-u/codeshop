@@ -8,7 +8,7 @@
       <div class="col">
 
         <img src="https://picsum.photos/200/300.jpg" alt="">
-        <p>By Collins Dauda</p>
+        <p>By <?php echo get_product_owner($product["listing_id"]); ?></p>
       </div>
 
       <!-- product name and description -->
