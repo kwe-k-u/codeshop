@@ -1,5 +1,5 @@
 <?php
-require('Backend/Upload code.php');
+require('backend/Upload code.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
