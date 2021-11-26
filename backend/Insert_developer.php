@@ -4,7 +4,7 @@ include ('Database_connection_finalproject');
 require ('developer_account_form.php');
 incude ('Database_credentials_finalproject');
 
-if(isset($_POST['submit']))
+if(isset($_POST['developer']))
 {		
     
     $buyer->user_name = $_POST['user_name'];
