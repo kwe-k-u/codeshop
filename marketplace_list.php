@@ -21,7 +21,7 @@
       <div class="col ">
         <p>GHC</p>
         <p><strong><?php  echo $product["price"] ?></strong></p>
-
+        <a href="product_page.php" class="btn btn-secondary">View</a>
       </div>
       <div class="col">
 

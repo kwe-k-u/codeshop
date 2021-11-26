@@ -1,13 +1,3 @@
-<?php
-require ('backend/add_to_cart.php');
-require ('backend/code_controller.php');
-
-session_start();
-
-if (isset($_GET['id'])) {
-    $sel_prod = select_one_code_controller($_GET['id']);
-}
-?>
 
 <!doctype html>
 <html lang="en">
@@ -30,32 +20,6 @@ if (isset($_GET['id'])) {
   <div class="row">
 
 
-    <!-- side bar  -->
-    <section class="container col-3 cs-secondary align-content-center" id="sidebar">
-
-      <h3>Categories</h3>
-      <div><a href="marketplace.php">
-          <h5>All Categories</h5>
-        </a></div>
-      <div><a href="marketplace.php?category=desktop">Desktop applications</a></div>
-      <div><a href="marketplace.php?category=mobile">Mobile applications</a></div>
-      <div><a href="marketplace.php?category=server">Server systems applications</a></div>
-      <div><a href="marketplace.php?category=web">Web development</a></div>
-
-
-
-      <h3>Filters</h3>
-      <form action="marketplace.php" method="get" id="filter_form">
-        <div>Upload date
-          <input type="date" name="uploadDate">
-        </div>
-        <div>Price Range<input type="range" name="priceRange" min=300 max=5000></div>
-        <div>Rating<input type="number" name="rating" id=""></div>
-        <button type="submit" id="filter-apply">Apply</button>
-      </form>
-
-
-    </section>
 
     <!-- main section  -->
     <section class="container col-8" id="main">
