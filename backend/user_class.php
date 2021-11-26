@@ -12,7 +12,7 @@ class Customer extends Connection{
 		return $this->query("delete from user where user_id = '$id'");
 	}
 
-	function update_customer($id, $name, $email, $password);
+	function update_customer($id, $name, $email, $password){
 		return $this->query("update user set username='$name', email='$email', password='$password'");
 	}
 
